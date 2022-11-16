@@ -1,17 +1,39 @@
 
-.form-position {
+.form-wrapper {
     display: flex;
-    justify-content: center;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 20vh auto;
+    background-color: rgb(233, 237, 240);
+    border-radius: 5%;
+    max-width: 25vw;
+}
+
+@media (max-width: 1120px){
+    .form-wrapper{
+        max-width: 40vw; 
+    }
+   
+}
+@media (max-width: 735px){
+    .form-wrapper{
+        max-width: 70vw; 
+    }
+   
 }
 
 
 .login-form {    
     text-align: center;
-    width: 20rem;
-    background-color: rgb(233, 237, 240);
-    margin-top: 24vh;
-    padding: 2rem; 
+    padding: 1.5rem; 
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 5%; 
-}    
+} 
+
+.create-account__button{
+    width: 14rem;
+}
+
+
