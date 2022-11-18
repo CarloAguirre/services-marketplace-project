@@ -10,6 +10,17 @@
     max-width: 25vw;
 }
 
+.form-wrapper__create-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 20vh auto;
+    background-color: rgb(233, 237, 240);
+    border-radius: 5%;
+    max-width: 25vw;
+}
+
 @media (max-width: 1120px){
     .form-wrapper{
         max-width: 40vw; 
@@ -34,6 +45,11 @@
 
 .create-account__button{
     width: 14rem;
+}
+
+#errorMsg {
+    margin-top: -8rem;
+    
 }
 
 

@@ -1,0 +1,10 @@
+.filters-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.filter-custom {
+    margin: .3rem;
+}

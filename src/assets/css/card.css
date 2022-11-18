@@ -1,0 +1,16 @@
+
+
+.card-title{
+    background-color: rgb(184, 233, 216);
+    width: fit-content;
+    padding: .5rem;
+    border-radius: 10%;
+}
+
+@media (min-width: 768px){
+   .card-image{
+    min-height: 30vh;
+    max-height: 30vh;
+    width: 30vw;
+   }
+}

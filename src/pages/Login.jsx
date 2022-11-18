@@ -2,7 +2,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import Cookies from 'universal-cookie'
-import '../css/Login.css'
+import '../assets/css/login.css'
+import { NavModel } from '../components/NavModel'
 
 
 
@@ -11,8 +12,6 @@ export const Login = () => {
     const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/auth/login`
 
     const cookies = new Cookies();
-
-
 
     const [formState, setFormState] = useState({
 
@@ -59,18 +58,17 @@ export const Login = () => {
                 cookies.set('uid', data.usuario.uid, {"path": "/"});
                 cookies.set('token', data.token, {"path": "/"});
                 alert(`${data.usuario.nombre} haz iniciado sesión correctamente`)
-                window.location.href = "./home"
+                window.location.href = "./"
                   
               })
-              .catch(({request}) =>{
-                console.log(JSON.parse(request.response));
-                const badRequest = JSON.parse(request.response);
-                const errorMsg = badRequest.msg;             
-                
+              .catch(({response}) =>{
+                console.log(response.data.errors[0])
+                const{msg} = response.data.errors[0]
+  
                 document.getElementById('errorMsg').innerHTML = `
                 <p>
-                    ${errorMsg}
-                </p>`    
+                    ${msg}
+                </p>`               
               });      
 
             }
@@ -79,6 +77,9 @@ export const Login = () => {
 
   return (
     <>
+    <header>
+      {<NavModel name ={name} />}
+    </header>
     <div className='form-wrapper'>
         <form 
         className='login-form'
@@ -123,7 +124,7 @@ export const Login = () => {
           </a>
         </div>
     </div>
-    <div id='errorMsg' className='text-center mt-4' ></div>
+    <div id='errorMsg' className='text-center' ></div>
     </>
   )
 }

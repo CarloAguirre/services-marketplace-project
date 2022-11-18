@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import Cookies from 'universal-cookie'
-import '../css/Login.css'
+import '../assets/css/login.css'
+import { NavModel } from '../components/NavModel'
 
 
 export const CreateAccount = () => {
@@ -9,6 +10,7 @@ export const CreateAccount = () => {
     const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/usuarios/`
 
     const cookies = new Cookies();
+
 
     const [formState, setFormState] = useState({
         name: '',
@@ -53,18 +55,13 @@ export const CreateAccount = () => {
                 cookies.set('name', data.nombre, {"path": "/"});
                 cookies.set('email', data.correo, {"path": "/"});
                 cookies.set('uid', data.uid, {"path": "/"});
-                alert(`${data.nombre} haz tu cuenta correctamente, ahora puede iniciar sesión`)
-                window.location.href = "./"
+                alert(`${data.nombre} haz creado tu cuenta correctamente, ahora puede iniciar sesión.`)
+                window.location.href = "./login"
                   
               })
-              .catch((error) =>{
-                console.log(JSON.parse(error.request.response));
-
-                const arr = JSON.parse(error.request.response);
-
-                const errorArray = arr.errors[0]
-
-                const {msg} = errorArray
+              .catch(({response}) =>{
+                console.log(response.data.errors[0])
+                const{msg} = response.data.errors[0]
   
                 document.getElementById('errorMsg').innerHTML = `
                 <p>
@@ -76,6 +73,10 @@ export const CreateAccount = () => {
 
     return (
         <>
+        <header>
+          {<NavModel name ={name} />}
+        </header>
+
         <div className='form-wrapper'>
             <form 
             className='login-form'
@@ -126,7 +127,7 @@ export const CreateAccount = () => {
             <button type="submit" className="btn btn-primary create-account__button">Crear Cuenta</button>
             </form>
         </div>
-        <div id='errorMsg' className='text-center mt-4' ></div>
+            <div id='errorMsg' className='text-center' ></div>
         </>
       )
     }
