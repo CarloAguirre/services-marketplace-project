@@ -4,6 +4,7 @@ import axios from 'axios'
 import Cookies from 'universal-cookie'
 import '../assets/css/login.css'
 import { NavModel } from '../components/NavModel'
+import { loginFetch } from '../../helpers/loginFetch'
 
 
 
@@ -33,43 +34,7 @@ export const Login = () => {
       const onSubmit = async(event)=>{
         event.preventDefault();
 
-            var data = JSON.stringify({
-                "password": formState.password,
-                "correo": formState.email
-              });
-              
-              var config = {
-                method: 'post',
-                url: baseUrl,
-                headers: { 
-                  'Content-Type': 'application/json'
-                },
-                data : data
-              };
-              
-              await axios(config)
-              .then((response) => {
-
-                const {data} = response;
-                console.log(data.usuario);
-
-                cookies.set('name', data.usuario.nombre, {"path": "/"});
-                cookies.set('email', data.usuario.correo, {"path": "/"});
-                cookies.set('uid', data.usuario.uid, {"path": "/"});
-                cookies.set('token', data.token, {"path": "/"});
-                alert(`${data.usuario.nombre} haz iniciado sesión correctamente`)
-                window.location.href = "./"
-                  
-              })
-              .catch(({response}) =>{
-                console.log(response.data.errors[0])
-                const{msg} = response.data.errors[0]
-  
-                document.getElementById('errorMsg').innerHTML = `
-                <p>
-                    ${msg}
-                </p>`               
-              });      
+            loginFetch(password, email)
 
             }
             

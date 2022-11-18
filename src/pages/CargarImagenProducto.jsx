@@ -1,9 +1,10 @@
 
 import { useState } from 'react'
 import Cookies from 'universal-cookie'
+
 import { cargarImagen } from '../../helpers/cargarImagen'
-import '../assets/css/login.css'
 import { NavModel } from '../components/NavModel'
+import '../assets/css/login.css'
 
 export const CargarImagenProducto = () => {
 

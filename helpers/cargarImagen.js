@@ -17,6 +17,7 @@ export const cargarImagen = async(archivo, id)=>{
             </p>`;
         }
 
+        
 
     var formdata = new FormData();
     formdata.append("archivo", archivo, "/path/to/file");
@@ -24,8 +25,13 @@ export const cargarImagen = async(archivo, id)=>{
     var requestOptions = {
     method: 'PUT',
     body: formdata,
-    redirect: 'follow'
-    };
+    redirect: 'follow',
+    // headers: { 
+    //     'Content-Type': 'application/json'
+    //   },
+    //   data
+   };
+    
 
     await fetch(`https://restserver-crud-avanzado.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
     .then(response => response.text())

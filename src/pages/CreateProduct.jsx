@@ -4,6 +4,7 @@ import Cookies from 'universal-cookie'
 
 import '../assets/css/login.css'
 import { NavModel } from '../components/NavModel'
+import { createProducto } from '../../helpers/createProducto'
 
 
 export const CreateProduct = () => {
@@ -25,42 +26,12 @@ export const CreateProduct = () => {
     const onSubmit = async(event)=>{
         event.preventDefault();
 
-        var data = JSON.stringify({
-            "nombre": formstate.nombre,
-            "categoria": formstate.categoria,
-            "precio": formstate.precio
-        });
-
-        var config = {
-            method: 'post',
-            url: 'https://restserver-crud-avanzado.herokuapp.com/api/productos/',
-            headers: { 
-                'Authorization': token, 
-                'Content-Type': 'application/json'
-            },
-            data : data
-        };
-
-        await axios(config)
-        .then(function (response) {
-            const {nombre} = response.data
+        try {
+            createProducto(nombre, categoria, precio, token)
             
-            console.log(response.data._id)
-            cookies.set('id', response.data._id, {"path": "/"})
-
-            alert(`Haz crado correctamente el tour: ${nombre}`)
-            window.location.href = "./upload-service-image"
-        })
-        .catch(function ({response}) {
-            const {msg} = response.data;
-        
-            document.getElementById('errorMsg').innerHTML = `
-            <p>
-                ${msg}
-            </p>`     
-        
-        });
-
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     const {nombre, categoria, precio} = formstate;
