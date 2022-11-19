@@ -4,7 +4,7 @@ import { Home } from '../pages/Home'
 import { CreateAccount } from '../pages/CreateAccount'
 import { CreateProduct } from '../pages/CreateProduct'
 import { CargarImagenProducto } from '../pages/CargarImagenProducto'
-import { CloudinaryTest } from '../pages/CloudinaryTest'
+import { CloudinaryTest } from '../components/CloudinaryTest'
 
 
 export const Router = () => {
