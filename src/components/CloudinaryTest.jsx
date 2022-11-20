@@ -48,7 +48,7 @@ export const CloudinaryTest = () => {
       
   }, [])
   
-  
+  console.log(imageIdArray[3])
     
     // Create and configure your Cloudinary instance
 
@@ -57,15 +57,27 @@ export const CloudinaryTest = () => {
         cloudName: 'dubwhwd1w'
       }
     }); 
-    let myImage = cld.image(`${imageIdArray[2]}`); 
+    
+    // let i =''
+    // for(i=0; i=imageIdArray.length; i++){
+      let myImage = cld.image(`${imageIdArray[2]}`); 
+
+      // document.getElementById('card').innerHTML = `<Col xs={12} md={6} xl={4} > {<CardModel img={1} />} </Col>`
+
+    // }
+
+    // const path = `../src/assets/imgs/${img}.jpg`
     
     
-    console.log(imageIdArray[2]) 
+    // console.log(imageIdArray[2]) 
 
   return (
-    <div>
-      <AdvancedImage cldImg={myImage} />
+
+    <div id='card'>
+      <Col xs={12} md={6} xl={4} > {<CardModel img={myImage} />} </Col>
     </div>
+
+   
   
   );
 }

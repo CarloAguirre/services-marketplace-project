@@ -1,17 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {AdvancedImage} from '@cloudinary/react';
 
 import '../assets/css/card.css'
 
 const CardModel = ({img})=>{
 
-    const path = `../src/assets/imgs/${img}.jpg`
+    // const path = `../src/assets/imgs/${img}.jpg`
 
   
     return (
         <div className='card-wrapper my-5 mx-2'>
             <Card style={{ width: '100%', marginBottom: '1.5rem'}} className = 'card-style '>
-                <Card.Img variant="top" src={ path } className = 'card-image'/>
+                <AdvancedImage cldImg={img} />
+                {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}
                 <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text className='text-dark text-opacity-50 fw-semibold'>
