@@ -18,6 +18,7 @@ import {Position} from "@cloudinary/url-gen/qualifiers/position";
 import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 import {focusOn} from "@cloudinary/url-gen/qualifiers/gravity";
 import {FocusOn} from "@cloudinary/url-gen/qualifiers/focusOn";
+import CardModel from "../src/components/CardModel";
 
 
 export const productInfoFetch = async()=>{
@@ -26,11 +27,11 @@ export const productInfoFetch = async()=>{
 
   let data = '';
 
-  // const cld = new Cloudinary({
-  //   cloud: {
-  //     cloudName: 'dubwhwd1w'
-  //   }
-  // }); 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dubwhwd1w'
+    }
+  }); 
     
   let config = {
     method: 'get',
@@ -59,9 +60,9 @@ export const productInfoFetch = async()=>{
 
       imgIdArray.push(imgId);
 
-      // let myImage = cld.image(`'${imgId[i]}'`);
+      // let myImage = cld.image(`'${imgId}'`);
 
-      // document.getElementById('cards').innerHTML = `<CardModel myImage={1} />`
+      // document.getElementById('cards').innerHTML = `<p>hola mundo</p>`
 
     }
 
