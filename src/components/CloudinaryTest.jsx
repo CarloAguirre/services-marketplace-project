@@ -32,10 +32,10 @@ import * as ReactDOMServer from 'react-dom/server';
 
 
 
-export const CloudinaryTest =() => {
+export const CloudinaryTest = () => {
 
 
-  const [imageIdArray, setImageIdArray] = useState(['',''])
+  const [imageIdArray, setImageIdArray] = useState([])
   
   
   useEffect(() => {
@@ -46,24 +46,31 @@ export const CloudinaryTest =() => {
         
         setImageIdArray(response);
 
-      
-    })
-  };
+        
+      })
+    };
     getImagesID()
-  }, [])
-  console.log(imageIdArray[1])
-  
-
-
-
-
+  }, [imageIdArray.length])
 
   
 
-  
-
-   
-
+ 
+    
+    const cld = new Cloudinary({
+      cloud: {
+        cloudName: 'dubwhwd1w'
+      }
+    }); 
+    
+    let imagenes = {
+    myImage1 :cld.image(`${imageIdArray[2]}`), 
+    myImage2 :cld.image(`${imageIdArray[3]}`), 
+    myImage3 :cld.image(`${imageIdArray[4]}`), 
+    myImage4 :cld.image(`${imageIdArray[5]}`), 
+    myImage5 :cld.image(`${imageIdArray[6]}`), 
+    myImage6 :cld.image(`${imageIdArray[7]}`), 
+    
+  }
   
 
   
@@ -71,27 +78,28 @@ export const CloudinaryTest =() => {
   
   // console.log(imagenes.myImage1)
   
-  // const [page, setPage] = useState(imagenes)
+  const [page, setPage] = useState(imagenes)
   
-  // const onClick = ()=>{
+  const onClick = (event)=>{
     
   
-  //     console.log(page.myImage1)
+      // console.log(page.myImage1)
       
-  //     imagenes = setPage(
-  //       {
-  //         myImage1 :cld.image(`${imageIdArray[8]}`), 
-  //         myImage2 :cld.image(`${imageIdArray[9]}`), 
-  //         myImage3 :cld.image(`${imageIdArray[10]}`), 
-  //         myImage4 :cld.image(`${imageIdArray[11]}`), 
-  //         myImage5 :cld.image(`${imageIdArray[12]}`), 
-  //         myImage6 :cld.image(`${imageIdArray[12]}`),           
-  //       }
-  //       )
-        
-  //       console.log(page.myImage1)     
-  //     }
+      imagenes = setPage(
+        {
+          myImage1 :cld.image(`${imageIdArray[8]}`), 
+          myImage2 :cld.image(`${imageIdArray[9]}`), 
+          myImage3 :cld.image(`${imageIdArray[10]}`), 
+          myImage4 :cld.image(`${imageIdArray[11]}`), 
+          myImage5 :cld.image(`${imageIdArray[12]}`), 
+          myImage6 :cld.image(`${imageIdArray[12]}`), 
+          
+        }
+        )
+        // console.log(page.myImage1)     
       
+    }
+
     
     return (
 <> 
@@ -104,15 +112,15 @@ export const CloudinaryTest =() => {
       <div className=' mx-5'>
       <Container>
         <Row>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage1} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage2} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage3} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage4} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage5} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imageIdArray[1].myImage6} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage1} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage2} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage3} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage4} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage5} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage6} />} </Col>
         </Row>
       </Container>
-      <button >Pagina siguiente</button>
+      <button onClick={onClick}>Pagina siguiente</button>
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
       </div>
