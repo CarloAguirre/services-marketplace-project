@@ -27,11 +27,11 @@ export const productInfoFetch = async()=>{
 
   let data = '';
 
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: 'dubwhwd1w'
-    }
-  }); 
+  // const cld = new Cloudinary({
+  //   cloud: {
+  //     cloudName: 'dubwhwd1w'
+  //   }
+  // }); 
     
   let config = {
     method: 'get',
@@ -44,6 +44,12 @@ export const productInfoFetch = async()=>{
   .then((response) => {
     // console.log(response.data.productos)
     const {productos} = response.data;
+
+    const cld = new Cloudinary({
+      cloud: {
+        cloudName: 'dubwhwd1w'
+      }
+    }); 
 
     let i = '';
 
@@ -59,7 +65,6 @@ export const productInfoFetch = async()=>{
       let imgId = imgIdUndotted[imgIdUndotted.length-2]
 
       imgIdArray.push(imgId);
-
       // let myImage = cld.image(`'${imgId}'`);
 
       // document.getElementById('cards').innerHTML = `<p>hola mundo</p>`

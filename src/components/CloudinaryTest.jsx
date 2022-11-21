@@ -26,6 +26,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { productInfoFetch } from '../../helpers/productosFetch';
 import CardModel from './CardModel';
+import { NavModel } from './NavModel';
+
+import * as ReactDOMServer from 'react-dom/server';
 
 
 
@@ -33,49 +36,95 @@ export const CloudinaryTest = () => {
 
 
   const [imageIdArray, setImageIdArray] = useState([])
-
+  
+  
   useEffect(() => {
     const getImagesID = async()=>{
-  
+      
       await productInfoFetch()
       .then(response =>{
         
-        setImageIdArray(response)
-        })
-    
-      };
-      getImagesID()
-      
-  }, [])
-  
-  console.log(imageIdArray[3])
-    
-    // Create and configure your Cloudinary instance
+        setImageIdArray(response);
 
+        
+      })
+    };
+    getImagesID()
+  }, [imageIdArray.length])
+
+  
+
+ 
+    
     const cld = new Cloudinary({
       cloud: {
         cloudName: 'dubwhwd1w'
       }
     }); 
     
-    // let i =''
-    // for(i=0; i=imageIdArray.length; i++){
-      let myImage = cld.image(`${imageIdArray[2]}`); 
-
-      // document.getElementById('card').innerHTML = `<Col xs={12} md={6} xl={4} > {<CardModel img={1} />} </Col>`
-
-    // }
-
-    // const path = `../src/assets/imgs/${img}.jpg`
+    let imagenes = {
+    myImage1 :cld.image(`${imageIdArray[2]}`), 
+    myImage2 :cld.image(`${imageIdArray[3]}`), 
+    myImage3 :cld.image(`${imageIdArray[4]}`), 
+    myImage4 :cld.image(`${imageIdArray[5]}`), 
+    myImage5 :cld.image(`${imageIdArray[6]}`), 
+    myImage6 :cld.image(`${imageIdArray[7]}`), 
     
+  }
+  
+
+  
+  
+  
+  // console.log(imagenes.myImage1)
+  
+  const [page, setPage] = useState(imagenes)
+  
+  const onClick = (event)=>{
     
-    // console.log(imageIdArray[2]) 
+  
+      // console.log(page.myImage1)
+      
+      imagenes = setPage(
+        {
+          myImage1 :cld.image(`${imageIdArray[8]}`), 
+          myImage2 :cld.image(`${imageIdArray[9]}`), 
+          myImage3 :cld.image(`${imageIdArray[10]}`), 
+          myImage4 :cld.image(`${imageIdArray[11]}`), 
+          myImage5 :cld.image(`${imageIdArray[12]}`), 
+          myImage6 :cld.image(`${imageIdArray[12]}`), 
+          
+        }
+        )
+        // console.log(page.myImage1)     
+      
+    }
 
-  return (
+    
+    return (
+<> 
 
-    <div id='card'>
-      <Col xs={12} md={6} xl={4} > {<CardModel img={myImage} />} </Col>
-    </div>
+    <header>
+      {<NavModel name ={name} />}
+    </header>
+
+      <div id='cards'></div>
+      <div className=' mx-5'>
+      <Container>
+        <Row>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage1} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage2} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage3} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage4} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage5} />} </Col>
+          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage6} />} </Col>
+        </Row>
+      </Container>
+      <button onClick={onClick}>Pagina siguiente</button>
+      <hr className=' container' />
+      <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
+      </div>
+</>
 
    
   
