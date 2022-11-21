@@ -45,11 +45,6 @@ export const productInfoFetch = async()=>{
     // console.log(response.data.productos)
     const {productos} = response.data;
 
-    const cld = new Cloudinary({
-      cloud: {
-        cloudName: 'dubwhwd1w'
-      }
-    }); 
 
     let i = '';
 
@@ -68,14 +63,30 @@ export const productInfoFetch = async()=>{
       // let myImage = cld.image(`'${imgId}'`);
 
       // document.getElementById('cards').innerHTML = `<p>hola mundo</p>`
-
     }
+    
 
   })
   .catch((error) => {
     console.log(error);
   });
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dubwhwd1w'
+    }
+  }); 
+  
+  let imagenes = {
+  myImage1 :cld.image(`${imgIdArray[2]}`), 
+  myImage2 :cld.image(`${imgIdArray[3]}`), 
+  myImage3 :cld.image(`${imgIdArray[4]}`), 
+  myImage4 :cld.image(`${imgIdArray[5]}`), 
+  myImage5 :cld.image(`${imgIdArray[6]}`), 
+  myImage6 :cld.image(`${imgIdArray[7]}`), 
+  
+}
+
   // console.log(imgIdArray)
-  return imgIdArray;
+  return [imgIdArray, imagenes];
 }
