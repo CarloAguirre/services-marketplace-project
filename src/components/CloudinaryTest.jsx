@@ -28,7 +28,7 @@ import { productInfoFetch } from '../../helpers/productosFetch';
 import CardModel from './CardModel';
 import { NavModel } from './NavModel';
 
-import * as ReactDOMServer from 'react-dom/server';
+
 
 
 
@@ -37,69 +37,48 @@ export const CloudinaryTest = () => {
 
   const [imageIdArray, setImageIdArray] = useState([])
   
+
   
+  const getImagesID = async()=>{
+    
+    await productInfoFetch()
+    .then(response =>{
+      
+      setImageIdArray(response);
+    
+    })
+  };
+
   useEffect(() => {
-    const getImagesID = async()=>{
-      
-      await productInfoFetch()
-      .then(response =>{
-        
-        setImageIdArray(response);
-
-        
-      })
-    };
     getImagesID()
-  }, [imageIdArray.length])
-
-  
-
- 
-    
-    const cld = new Cloudinary({
-      cloud: {
-        cloudName: 'dubwhwd1w'
-      }
-    }); 
-    
-    let imagenes = {
-    myImage1 :cld.image(`${imageIdArray[2]}`), 
-    myImage2 :cld.image(`${imageIdArray[3]}`), 
-    myImage3 :cld.image(`${imageIdArray[4]}`), 
-    myImage4 :cld.image(`${imageIdArray[5]}`), 
-    myImage5 :cld.image(`${imageIdArray[6]}`), 
-    myImage6 :cld.image(`${imageIdArray[7]}`), 
-    
-  }
-  
-
+  }, [])
   
   
-  
-  // console.log(imagenes.myImage1)
-  
-  const [page, setPage] = useState(imagenes)
-  
-  const onClick = (event)=>{
-    
-  
-      // console.log(page.myImage1)
-      
-      imagenes = setPage(
-        {
-          myImage1 :cld.image(`${imageIdArray[8]}`), 
-          myImage2 :cld.image(`${imageIdArray[9]}`), 
-          myImage3 :cld.image(`${imageIdArray[10]}`), 
-          myImage4 :cld.image(`${imageIdArray[11]}`), 
-          myImage5 :cld.image(`${imageIdArray[12]}`), 
-          myImage6 :cld.image(`${imageIdArray[12]}`), 
-          
-        }
-        )
-        // console.log(page.myImage1)     
-      
+  console.log(imageIdArray[1])
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dubwhwd1w'
     }
+  }); 
+  
+  let imagenes = {
+  myImage1 :cld.image(`${imageIdArray[2]}`), 
+  myImage2 :cld.image(`${imageIdArray[3]}`), 
+  myImage3 :cld.image(`${imageIdArray[4]}`), 
+  myImage4 :cld.image(`${imageIdArray[5]}`), 
+  myImage5 :cld.image(`${imageIdArray[6]}`), 
+  myImage6 :cld.image(`${imageIdArray[7]}`), 
+}
 
+
+ const onClick = ()=>{
+
+
+  
+  setImageIdArray([imageIdArray[6], imageIdArray[7], imageIdArray[8], imageIdArray[9], imageIdArray[10], imageIdArray[11], imageIdArray[12]])
+ };
+
+  
     
     return (
 <> 
