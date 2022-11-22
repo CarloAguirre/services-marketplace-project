@@ -37,24 +37,19 @@ export const CloudinaryTest = () => {
 
   const [imageIdArray, setImageIdArray] = useState([])
   
-
-  
   const getImagesID = async()=>{
     
     await productInfoFetch()
     .then(response =>{
       
       setImageIdArray(response);
-    
     })
   };
 
   useEffect(() => {
     getImagesID()
   }, [])
-  
-  
-  console.log(imageIdArray[1])
+
   const cld = new Cloudinary({
     cloud: {
       cloudName: 'dubwhwd1w'
@@ -70,21 +65,32 @@ export const CloudinaryTest = () => {
   myImage6 :cld.image(`${imageIdArray[5]}`), 
 }
 
- const onClick = ()=>{
+ const onClickNextPage = ({target})=>{
+
+  console.log(target.name)
 
   let newPages = [];
+  
+  if(target.name === 'prev'){
+    let prevPages = [imageIdArray[0], imageIdArray[1], imageIdArray[2], imageIdArray[3], imageIdArray[4], imageIdArray[5]]
+    setImageIdArray(prevPages)
+    console.log(imageIdArray)
+  }
 
-  let i = '';
-
-  for(i=6; i<imageIdArray.length; i++){
-
-    newPages.push(imageIdArray[i])
+  if(target.name === 'next'){
+    let i = '';
+  
+    for(i=6; i<imageIdArray.length; i++){
+  
+      newPages.push(imageIdArray[i])
   }
   setImageIdArray(newPages)
- };
+  console.log(imageIdArray)
+  }
 
-  
-    
+};
+
+   
     return (
 <> 
 
@@ -96,15 +102,45 @@ export const CloudinaryTest = () => {
       <div className=' mx-5'>
       <Container>
         <Row>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage1} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage2} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage3} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage4} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage5} />} </Col>
-          <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage6} />} </Col>
+        {
+            (imageIdArray[0])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage1} />} </Col>
+                    : null
+          }
+          {
+            (imageIdArray[1])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage2} />} </Col>
+                    : null
+          }
+          {
+            (imageIdArray[2])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage3} />} </Col>
+                    : null
+          }
+          {
+            (imageIdArray[3])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage4} />} </Col>
+                    : null
+          }
+          {
+            (imageIdArray[4])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage5} />} </Col>
+                    : null
+          }
+          {
+            (imageIdArray[5])
+                    ? <Col xs={12} md={6} xl={4} > {<CardModel img={imagenes.myImage6} />} </Col>
+                    : null
+          }
+          
         </Row>
       </Container>
-      <button onClick={onClick}>Pagina siguiente</button>
+      <button onClick={onClickNextPage} name = 'prev' >Pagina anterior</button>
+      {
+            (imageIdArray[5])
+                    ? <button onClick={onClickNextPage} name = 'next' >Pagina siguiente</button>
+                    : null
+          }
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
       </div>

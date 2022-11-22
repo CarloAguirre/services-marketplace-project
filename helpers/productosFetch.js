@@ -64,6 +64,10 @@ export const productInfoFetch = async()=>{
 
       let imgId = imgIdUndotted[imgIdUndotted.length-2]
 
+      if(imgId === undefined){
+        console.log('No existe la imagen')
+      }
+
       imgIdArray.push(imgId);
       // let myImage = cld.image(`'${imgId}'`);
 
