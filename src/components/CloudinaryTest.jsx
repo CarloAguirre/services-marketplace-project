@@ -62,20 +62,25 @@ export const CloudinaryTest = () => {
   }); 
   
   let imagenes = {
-  myImage1 :cld.image(`${imageIdArray[2]}`), 
-  myImage2 :cld.image(`${imageIdArray[3]}`), 
-  myImage3 :cld.image(`${imageIdArray[4]}`), 
-  myImage4 :cld.image(`${imageIdArray[5]}`), 
-  myImage5 :cld.image(`${imageIdArray[6]}`), 
-  myImage6 :cld.image(`${imageIdArray[7]}`), 
+  myImage1 :cld.image(`${imageIdArray[0]}`), 
+  myImage2 :cld.image(`${imageIdArray[1]}`), 
+  myImage3 :cld.image(`${imageIdArray[2]}`), 
+  myImage4 :cld.image(`${imageIdArray[3]}`), 
+  myImage5 :cld.image(`${imageIdArray[4]}`), 
+  myImage6 :cld.image(`${imageIdArray[5]}`), 
 }
-
 
  const onClick = ()=>{
 
+  let newPages = [];
 
-  
-  setImageIdArray([imageIdArray[6], imageIdArray[7], imageIdArray[8], imageIdArray[9], imageIdArray[10], imageIdArray[11], imageIdArray[12]])
+  let i = '';
+
+  for(i=6; i<imageIdArray.length; i++){
+
+    newPages.push(imageIdArray[i])
+  }
+  setImageIdArray(newPages)
  };
 
   
