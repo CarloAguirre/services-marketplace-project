@@ -4,7 +4,7 @@ import { Home } from '../pages/Home'
 import { CreateAccount } from '../pages/CreateAccount'
 import { CreateProduct } from '../pages/CreateProduct'
 import { CargarImagenProducto } from '../pages/CargarImagenProducto'
-import { CloudinaryTest } from '../components/CloudinaryTest'
+
 
 
 export const Router = () => {
@@ -19,7 +19,7 @@ export const Router = () => {
           <Route exact path= "/create-account" element={<CreateAccount />} />
           <Route exact path= "/create-tour" element={<CreateProduct />} />
           <Route exact path= "/upload-service-image" element={<CargarImagenProducto />} /> 
-          <Route exact path= "/cloud" element={<CloudinaryTest />} />   
+          {/* <Route exact path= "/cloud" element={<CloudinaryTest />} />    */}
         </Routes>
       </BrowserRouter>
     </>

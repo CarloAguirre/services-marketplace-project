@@ -24,6 +24,9 @@ import CardModel from "../src/components/CardModel";
 export const productInfoFetch = async()=>{
   
   let imgIdArray = []
+  let names = []
+  let prices = []
+  let users = []
 
   let data = '';
 
@@ -64,11 +67,17 @@ export const productInfoFetch = async()=>{
 
       let imgId = imgIdUndotted[imgIdUndotted.length-2]
 
-      if(imgId === undefined){
-        console.log('No existe la imagen')
-      }
-
       imgIdArray.push(imgId);
+
+      let nombre = productos[i].nombre
+      names.push(nombre)
+
+      let precio = productos[i].precio
+      prices.push(precio)
+
+      let usuario = productos[i].usuario.nombre
+      users.push(usuario)
+
       // let myImage = cld.image(`'${imgId}'`);
 
       // document.getElementById('cards').innerHTML = `<p>hola mundo</p>` s
@@ -79,7 +88,5 @@ export const productInfoFetch = async()=>{
   .catch((error) => {
     console.log(error);
   });
-
-  // console.log(imgIdArray)
-  return imgIdArray;
+  return [imgIdArray, names, prices, users];
 }

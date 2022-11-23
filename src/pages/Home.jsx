@@ -1,9 +1,12 @@
 import Cookies from 'universal-cookie'
-import CardGrid from '../components/CardGrid';
+
 
 import { NavModel } from '../components/NavModel';
 import '../assets/css/home.css'
 import { FiltersModel } from '../components/FiltersModel';
+import { CardGrid } from '../components/CardGrid';
+import '../assets/css/root.css'
+import '../assets/css/card.css'
 
 export const Home = () => {
 
@@ -29,7 +32,7 @@ export const Home = () => {
       {<FiltersModel />}
       </div> */}
 
-      <div className=' mx-5'>
+      <div className=' mx-5 background-body'>
         {<CardGrid/>}
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
