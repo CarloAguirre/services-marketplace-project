@@ -10,7 +10,7 @@ export const CargarImagenProducto = () => {
 
     const cookies = new Cookies();
     const id = cookies.get("id")
-     const name = cookies.get('name');
+    const name = cookies.get('name');
   
     const [archivo, setArchivo] = useState(null);
 

@@ -4,7 +4,7 @@ import {AdvancedImage} from '@cloudinary/react';
 
 import '../assets/css/card.css'
 
-const CardModel = ({img, title, price, user})=>{
+const CardModel = ({img, title, price, user, desc, city})=>{
 
     // const path = `../src/assets/imgs/${img}.jpg`
 
@@ -17,12 +17,11 @@ const CardModel = ({img, title, price, user})=>{
                 <Card.Body className = 'card-style bg-light'>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text className='text-dark text-opacity-50 fw-semibold'>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                   {desc}
                 </Card.Text>
                 <div className="text-dark text-opacity-50 fw-semibold d-flex justify-content-between">
-                        <span><i className="fa-solid fa-location-dot me-2"></i>City, Country.</span>
-                    <p className="text-dark text-opacity-50 me-3 fw-semibold">Usuario: {user}</p>
+                        <span><i className="fa-solid fa-location-dot me-2"></i>{city}, Chile.</span>
+                    <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
                     </div>
                 <hr />
                 <Button variant="primary" 

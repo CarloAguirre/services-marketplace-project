@@ -1,13 +1,15 @@
 import axios from 'axios'
 import Cookies from 'universal-cookie'
 
-export const createProducto = async(nombre, categoria, precio, token)=>{
+export const createProducto = async(nombre, categoria, precio, descripcion, ciudad, token)=>{
     const cookies = new Cookies();
     
     var data = JSON.stringify({
         "nombre": nombre,
         "categoria": categoria,
-        "precio": precio
+        "precio": precio,
+        "descripcion": descripcion,
+        "ciudad": ciudad
     });
 
     var config = {
@@ -27,17 +29,25 @@ export const createProducto = async(nombre, categoria, precio, token)=>{
         console.log(response.data._id)
         cookies.set('id', response.data._id, {"path": "/"})
 
-        alert(`Haz crado correctamente el tour: ${nombre}`)
+        
         window.location.href = "./upload-service-image"
     })
     .catch(function ({response}) {
-        console.log(response)
-        const {msg} = response.data.errors[0];
-    
+        // console.log(response)
+        let msg1 = response.data.msg;
+        let msg2 =response.data.errors[0].msg  
+
+        console.log(msg2)       
+
         document.getElementById('errorMsg').innerHTML = `
         <p>
-            ${msg}
-        </p>`     
+            ${msg1}
+        </p>` 
+        
+        document.getElementById('errorMsg').innerHTML = `
+        <p>
+            ${msg2}
+        </p>`   
     
     });
 }

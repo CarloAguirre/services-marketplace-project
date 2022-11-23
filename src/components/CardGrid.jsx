@@ -36,13 +36,13 @@ import { IsLoading } from './IsLoading';
 export const CardGrid = () => {
 
 
-  const [imageIdArray, setImageIdArray] = useState([[], [], [], []])
+  const [imageIdArray, setImageIdArray] = useState([[], [], [], [], [], []])
   
   const getImagesID = async()=>{
     
     await productInfoFetch()
     .then(response =>{
-      
+      console.log(response)
       setImageIdArray(response);
     })
   };
@@ -77,8 +77,6 @@ export const CardGrid = () => {
    name6: imageIdArray[1][5]
   }
 
-  console.log(names.name1)
-
   let prices = {
     price1: imageIdArray[2][0],
     price2: imageIdArray[2][1],
@@ -97,6 +95,24 @@ export const CardGrid = () => {
     user6: imageIdArray[3][5]
    }
 
+   let descripciones = {
+    descripcion1: imageIdArray[4][0],
+    descripcion2: imageIdArray[4][1],
+    descripcion3: imageIdArray[4][2],
+    descripcion4: imageIdArray[4][3],
+    descripcion5: imageIdArray[4][4],
+    descripcion6: imageIdArray[4][5]
+   }
+
+   let ciudades = {
+    ciudad1: imageIdArray[5][0],
+    ciudad2: imageIdArray[5][1],
+    ciudad3: imageIdArray[5][2],
+    ciudad4: imageIdArray[5][3],
+    ciudad5: imageIdArray[5][4],
+    ciudad6: imageIdArray[5][5]
+   }
+
 
 
 const onClickNextPage = ({target})=>{
@@ -105,20 +121,24 @@ const onClickNextPage = ({target})=>{
   let newNames = []
   let newPrices = []
   let newUsers = []
+  let newDesc = []
+  let newCity = []
   
   if(target.name === 'next'){
 
     console.log('next')
     let i = '';
     
-    for(i=0; i<imageIdArray[0].length; i++){
+    for(i=6; i<imageIdArray[0].length; i++){
       
-      newPages.push(imageIdArray[0][i+6])
-      newNames.push(imageIdArray[1][i+6])
-      newPrices.push(imageIdArray[2][i+6])
-      newUsers.push(imageIdArray[3][i+6])
+      newPages.push(imageIdArray[0][i])
+      newNames.push(imageIdArray[1][i])
+      newPrices.push(imageIdArray[2][i])
+      newUsers.push(imageIdArray[3][i])
+      newDesc.push(imageIdArray[4][i])
+      newCity.push(imageIdArray[5][i])
     }
-    setImageIdArray([newPages, newNames, newPrices, newUsers])
+    setImageIdArray([newPages, newNames, newPrices, newUsers, newDesc, newCity])
   }
 
   if(target.name === 'prev'){
@@ -136,39 +156,38 @@ const onClickNextPage = ({target})=>{
         <Row>
           
           {
-
-         
+        
             (imageIdArray[0][0])
                     ?
           
         
             [(imageIdArray[0][0])
-                    ? <Col xs={12} md={6} xl={4} key = 'col1'> {<CardModel img={imagenes.myImage1} title={names.name1} price={prices.price1} user={users.user1} />} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col1'> {<CardModel img={imagenes.myImage1} title={names.name1} price={prices.price1} user={users.user1} desc={descripciones.descripcion1} city={ciudades.ciudad1}/>} </Col>
                     : null,
           
           
             (imageIdArray[0][1])
-                    ? <Col xs={12} md={6} xl={4} key = 'col2' > {<CardModel img={imagenes.myImage2} title={names.name2} price={prices.price2} user={users.user2}/>} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col2' > {<CardModel img={imagenes.myImage2} title={names.name2} price={prices.price2} user={users.user2} desc={descripciones.descripcion2} city={ciudades.ciudad2}/>} </Col>
                     : null,
           
           
             (imageIdArray[0][2])
-                    ? <Col xs={12} md={6} xl={4} key = 'col3'> {<CardModel img={imagenes.myImage3} title={names.name3} price={prices.price3} user={users.user3}/>} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col3'> {<CardModel img={imagenes.myImage3} title={names.name3} price={prices.price3} user={users.user3} desc={descripciones.descripcion3} city={ciudades.ciudad3}/>} </Col>
                     : null,
           
           
             (imageIdArray[0][3])
-                    ? <Col xs={12} md={6} xl={4} key = 'col4'> {<CardModel img={imagenes.myImage4} title={names.name4} price={prices.price4} user={users.user4} />} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col4'> {<CardModel img={imagenes.myImage4} title={names.name4} price={prices.price4} user={users.user4} desc={descripciones.descripcion4} city={ciudades.ciudad4} />} </Col>
                     : null,
           
           
             (imageIdArray[0][4])
-                    ? <Col xs={12} md={6} xl={4} key = 'col5'> {<CardModel img={imagenes.myImage5} title={names.name5} price={prices.price5} user={users.user5} />} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col5'> {<CardModel img={imagenes.myImage5} title={names.name5} price={prices.price5} user={users.user5} desc={descripciones.descripcion5} city={ciudades.ciudad5}/>} </Col>
                     : null,
           
           
             (imageIdArray[0][5])
-                    ? <Col xs={12} md={6} xl={4} key = 'col6'> {<CardModel img={imagenes.myImage6} title={names.name6} price={prices.price6} user={users.user6}/>} </Col>
+                    ? <Col xs={12} md={6} xl={4} key = 'col6'> {<CardModel img={imagenes.myImage6} title={names.name6} price={prices.price6} user={users.user6} desc={descripciones.descripcion6} city={ciudades.ciudad6}/>} </Col>
                     : null]
 
                     :<IsLoading />

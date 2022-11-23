@@ -7,7 +7,7 @@ export const NavModel = ({name}) => {
     return (
     
 
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg bg-success">
             <div className="container-fluid navbar-custom">
                 <div className="ms-4">
                 <a className="navbar-brand link-dark fw-semibold ms-5" href="/">CABRA DEL VALLE

@@ -23,18 +23,15 @@ import CardModel from "../src/components/CardModel";
 
 export const productInfoFetch = async()=>{
   
-  let imgIdArray = []
-  let names = []
-  let prices = []
-  let users = []
+  let imgIdArray = [];
+  let names = [];
+  let prices = [];
+  let users = [];
+  let descripciones = [];
+  let ciudades = [];
 
   let data = '';
 
-  // const cld = new Cloudinary({
-  //   cloud: {
-  //     cloudName: 'dubwhwd1w'
-  //   }
-  // }); 
     
   let config = {
     method: 'get',
@@ -47,6 +44,8 @@ export const productInfoFetch = async()=>{
   .then((response) => {
     // console.log(response.data.productos)
     const {productos} = response.data;
+
+    console.log(productos)
 
     const cld = new Cloudinary({
       cloud: {
@@ -78,6 +77,12 @@ export const productInfoFetch = async()=>{
       let usuario = productos[i].usuario.nombre
       users.push(usuario)
 
+      let descripcion = productos[i].descripcion
+      descripciones.push(descripcion)
+
+      let ciudad = productos[i].ciudad
+      ciudades.push(ciudad)
+
       // let myImage = cld.image(`'${imgId}'`);
 
       // document.getElementById('cards').innerHTML = `<p>hola mundo</p>` s
@@ -88,5 +93,5 @@ export const productInfoFetch = async()=>{
   .catch((error) => {
     console.log(error);
   });
-  return [imgIdArray, names, prices, users];
+  return [imgIdArray, names, prices, users, descripciones, ciudades];
 }
