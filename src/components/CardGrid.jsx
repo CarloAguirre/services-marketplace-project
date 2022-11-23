@@ -198,8 +198,8 @@ const onClickNextPage = ({target})=>{
       
       {
             (imageIdArray[0][5] && imageIdArray[0][6])
-                    ?  <div className='text-center m-3 mb-5'><button onClick={onClickNextPage} name = 'next' type="button" className="btn btn-outline-secondary btn-lg text-center"> VER MAS </button></div>
-                    :  <div className='text-center m-3 mb-5'><button onClick={onClickNextPage} name = 'prev' type="button" className="btn btn-outline-secondary btn-lg text-center"> VER MAS </button></div>
+                    ?  <div className='text-center m-3 mb-5'><button onClick={onClickNextPage} name = 'next' type="button" className="btn btn-outline-success btn-lg text-center"> VER MAS </button></div>
+                    :  <div className='text-center m-3 mb-5'><button onClick={onClickNextPage} name = 'prev' type="button" className="btn btn-outline-success btn-lg text-center"> VER MAS </button></div>
           }
       
       

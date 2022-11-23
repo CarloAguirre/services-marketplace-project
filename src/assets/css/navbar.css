@@ -1,4 +1,8 @@
-
-.nav-bg{
-    /* background-color: var(--NaranjaPrincipal); */
+.nav-hover{
+    color: white;
+    opacity: .5;
+}
+.nav-hover:hover{
+    color: white;
+    opacity: 1;
 }

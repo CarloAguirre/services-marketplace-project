@@ -10,7 +10,7 @@ const CardModel = ({img, title, price, user, desc, city})=>{
 
   
     return (
-        <div className='card-wrapper my-5 mx-2'>
+        <div className='wrapper my-5 mx-2'>
             <Card style={{ width: '100%', marginBottom: '1.5rem'}} className = 'card-style'>
                 <AdvancedImage cldImg={img} className='card-image'/>
                 {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}

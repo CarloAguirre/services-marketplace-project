@@ -32,7 +32,7 @@ export const Home = () => {
       {<FiltersModel />}
       </div> */}
 
-      <div className=' mx-5 background-body'>
+      <div className='background-body'>
         {<CardGrid/>}
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>

@@ -10,7 +10,7 @@ export const NavModel = ({name}) => {
             <nav className="navbar navbar-expand-lg bg-success">
             <div className="container-fluid navbar-custom">
                 <div className="ms-4">
-                <a className="navbar-brand link-dark fw-semibold ms-5" href="/">CABRA DEL VALLE
+                <a className="navbar-brand link-light fw-semibold ms-5" href="/">CABRA DEL VALLE
                 <span><img src="./src/assets/imgs/goat.png" alt="imagen de una cabra, logo de cabra del valle" className='ms-2'/></span>
                 </a>
                 </div>
@@ -20,8 +20,8 @@ export const NavModel = ({name}) => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav me-5">
-                    <a className="nav-link link-dark" aria-current="page" href="/">Inicio</a>
-                    <a className="nav-link link-dark" href="/login">Iniciar Sesión</a>
+                    <a className="nav-link link-light active link-light" aria-current="page" href="/">Inicio</a>
+                    <a className="nav-link link-light nav-hover" href="/login">Iniciar Sesión</a>
                     {
                         (name)
                             ? <NavUserFunctions name={name}/> 

@@ -63,6 +63,7 @@ export const CreateProduct = () => {
                 <label className="form-label">Nombre del Tour</label>
                 <input 
                 type="text" 
+                maxLength="30"
                 className="form-control" 
                 placeholder='Tekking cerro mamalluca...' 
                 name='nombre'
