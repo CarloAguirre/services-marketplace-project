@@ -29,6 +29,7 @@ export const productInfoFetch = async()=>{
   let users = [];
   let descripciones = [];
   let ciudades = [];
+  let ids = [];
 
   let data = '';
 
@@ -83,6 +84,9 @@ export const productInfoFetch = async()=>{
       let ciudad = productos[i].ciudad
       ciudades.push(ciudad)
 
+      let id = productos[i]._id
+      ids.push(id)
+
       // let myImage = cld.image(`'${imgId}'`);
 
       // document.getElementById('cards').innerHTML = `<p>hola mundo</p>` s
@@ -93,5 +97,5 @@ export const productInfoFetch = async()=>{
   .catch((error) => {
     console.log(error);
   });
-  return [imgIdArray, names, prices, users, descripciones, ciudades];
+  return [imgIdArray, names, prices, users, descripciones, ciudades, ids];
 }

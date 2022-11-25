@@ -1,7 +1,5 @@
 
-.bg-image{
-    background-image: url(../imgs/bg_1.png);
-    background-size: cover;
-    height: 50vh;
 
+.background-body{
+    background-color: #c84614
 }

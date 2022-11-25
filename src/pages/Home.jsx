@@ -36,6 +36,7 @@ export const Home = () => {
         {<CardGrid/>}
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
+      <hr className='mb-0'/>
       </div>
  
 

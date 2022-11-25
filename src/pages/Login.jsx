@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react'
-import axios from 'axios'
 import Cookies from 'universal-cookie'
 import '../assets/css/login.css'
 import { NavModel } from '../components/NavModel'

@@ -1,0 +1,19 @@
+.tabs-bg{
+    background-color: #c84614;
+}
+
+.tab{
+    min-height: 100vh;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.nav-tabs .nav-link.active{
+    background-color: #c84614 !important;
+}
+
+.tab-content{
+    margin-top: -1rem;
+}

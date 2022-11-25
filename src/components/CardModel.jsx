@@ -4,10 +4,14 @@ import {AdvancedImage} from '@cloudinary/react';
 
 import '../assets/css/card.css'
 
-const CardModel = ({img, title, price, user, desc, city})=>{
+const CardModel = ({img, title, price, user, desc, city, id})=>{
+
 
     // const path = `../src/assets/imgs/${img}.jpg`
 
+    const onClickHandle = async()=>{  
+    window.location.href = `./tour-details?${id}`
+    }
   
     return (
         <div className='wrapper my-5 mx-2'>
@@ -27,6 +31,7 @@ const CardModel = ({img, title, price, user, desc, city})=>{
                 <Button variant="primary" 
                 className='btn btn-light btn-outline-success p-3'
                 style={{float: "left"}}
+                onClick ={onClickHandle}
                 >Reservar</Button>
                 <div className="d-flex justify-content-end">
                    
