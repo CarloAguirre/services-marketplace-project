@@ -1,15 +1,49 @@
+import {AdvancedImage} from '@cloudinary/react';
+import {Cloudinary} from "@cloudinary/url-gen";
+import {Transformation} from "@cloudinary/url-gen";
+
+// Import required actions.
+import {thumbnail, scale} from "@cloudinary/url-gen/actions/resize";
+import {byRadius} from "@cloudinary/url-gen/actions/roundCorners";
+import {sepia} from "@cloudinary/url-gen/actions/effect";
+import {source} from "@cloudinary/url-gen/actions/overlay";
+import {opacity,brightness} from "@cloudinary/url-gen/actions/adjust";
+import {byAngle} from "@cloudinary/url-gen/actions/rotate"
+
+// Import required qualifiers.
+import {image} from "@cloudinary/url-gen/qualifiers/source";
+import {Position} from "@cloudinary/url-gen/qualifiers/position";
+import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
+import {focusOn} from "@cloudinary/url-gen/qualifiers/gravity";
+import {FocusOn} from "@cloudinary/url-gen/qualifiers/focusOn";
 
 
+export const Itinerario = ({nombre, img}) => {
 
-export const Itinerario = ({nombre}) => {
+  
 
-    console.log(nombre)
-    console.log(nombre)
+    
+    let imgSplit = img.split('/');
+    
+    let imgSplitted = imgSplit[imgSplit.length-1];
+    
+    let imgIdUndotted = imgSplitted.split('.')
+    
+    let imgId = imgIdUndotted[imgIdUndotted.length-2]
+
+    const cld = new Cloudinary({
+    cloud: {
+        cloudName: 'dubwhwd1w'
+    }
+    }); 
+
+    const myImage = cld.image(`${imgId}`);
+
   return (
     <>
     <h3 className=" pt-5 mx-2 px-5 text-light text-center">{nombre}</h3>
     <div className="d-flex container container">
-        <img src="./src/assets/imgs/5.jpg" alt="" style={{width: '30%'}} className="ms-5 mt-5"/>
+        <AdvancedImage cldImg={myImage} />
         <p style={{ color: 'white', marginTop: '8rem' }} className="p-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
     </div>
