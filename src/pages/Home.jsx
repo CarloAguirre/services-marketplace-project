@@ -20,7 +20,9 @@ export const Home = () => {
     const name = cookies.get("name")
 
   return (
-    <>
+    
+    <div className='principal'>
+
     <header>
       {<NavModel name ={name} />}
     </header>
@@ -30,18 +32,15 @@ export const Home = () => {
       {<FiltersModel />}
       {<FiltersModel />}
       {<FiltersModel />}
-      </div> */}
+    </div> */}
 
       <div className='background-body'>
-        {<CardGrid/>}
+        {<CardGrid />}
       <hr className=' container' />
       <p className='text-center'>© Cabra del valle 2022 - todos los derechos reservados</p>
       <hr className='mb-0'/>
-      </div>
- 
+      </div>     
+    </div>
 
-
-        
-    </>
   )
 }

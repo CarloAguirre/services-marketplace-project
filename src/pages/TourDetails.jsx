@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { NavModel } from '../components/NavModel';
@@ -8,55 +8,24 @@ import { List } from '../components/List';
 import '../assets/css/tabs.css'
 import { Itinerario } from '../components/Itinerario';
 import { useEffect, useState } from 'react';
+import { Preference } from '../components/Preference';
 
 
 export const TourDetails = () => {
 
-    const valores = window.location.search;
-
-        
-        let id = valores.substr(1); 
-
-        const [producto, setProducto] = useState('')
-        
-        const productoFetch = async()=>{
-            let data = JSON.stringify({
-                "nombre": "cabaña para 4",
-                "categoria": "CABAÑAS",
-                "precio": "100000"
-            });
-            
-            let config = {
-                method: 'get',
-                url: `https://restserver-crud-avanzado.herokuapp.com/api/productos/${id}`,
-                headers: { 
-                    'Content-Type': 'application/json'
-                },
-                data : data
-            };
-            
-            await axios(config)
-            .then((response) => {
-           const {producto} = response.data
-           console.log(producto)
-           
-           setProducto(producto)
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-    }
-
-    useEffect(() => {
-        productoFetch()
-    }, [id])
-
-    
+    let params = new URLSearchParams(document.location.search);
+    let id = params.get("id"); 
+    let img = params.get("img"); 
+    let title = params.get("title"); 
+    let price = params.get("price"); 
+    let user = params.get("user"); 
+    let desc = params.get("desc"); 
+    let city = params.get("city");     
     
   return (
     <>
     {
-        (valores)?
+        (id)?
         <div id='container' >
     
         <header>
@@ -70,9 +39,8 @@ export const TourDetails = () => {
             fill
             >
                 <Tab eventKey="profile" title="Itinerario" className='tab tabs-bg'> 
-                {
-                
-                (producto)?<Itinerario nombre={producto.nombre} img={producto.img}/>
+                {               
+                (title)?<Itinerario nombre={title} img={img} desc={desc}/>
                 :null
                 }
                     
@@ -81,6 +49,7 @@ export const TourDetails = () => {
                  <List /> 
                 </Tab>
                 <Tab eventKey="longer-tab" title="Loooonger Tab" className='tab tabs-bg'>
+                    <Preference />
                     
                 </Tab>
                 <Tab eventKey="contact" title="Contact" className='tab tabs-bg'>

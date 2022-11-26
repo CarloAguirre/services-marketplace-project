@@ -6,17 +6,17 @@ import Col from 'react-bootstrap/Col';
 export const List = ()=> {
   return (
     <>
-    <div className='d-flex justify-content-evenly'>
+    <div className='d-flex justify-content-evenly pt-4'>
         <div>
           <Row>
             <ListGroup variant="flush">
               <h3 className='mt-3 text-center text-light'>Incluye:</h3>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+              <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✔ Dapibus ac facilisis in</ListGroup.Item>} </Col>
             </ListGroup>
           </Row>
         </div>
@@ -24,12 +24,12 @@ export const List = ()=> {
           <Row>
           <ListGroup variant="flush">
           <h3 className='mt-3 text-center text-light'>No Incluye:</h3>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ❌ Dapibus ac facilisis in</ListGroup.Item>} </Col>
             </ListGroup>
           </Row>
         </div>
@@ -38,12 +38,28 @@ export const List = ()=> {
         <Row>
           <ListGroup variant="flush">
           <h3 className='mt-5 mx-2 text-center text-light'>Importante que cada pasajero lleve:</h3>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
-            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
+            <Col xs={12}> {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center'> ✖️ Dapibus ac facilisis in</ListGroup.Item>} </Col>
             </ListGroup>
           </Row>
     </div>

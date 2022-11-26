@@ -2,3 +2,6 @@
     --NaranjaPrincipal: #ffa424;
     --AzulPrincipal: #688db9;
 }
+html{
+    min-height: 100vh;
+}

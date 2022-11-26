@@ -6,19 +6,19 @@ import '../assets/css/card.css'
 
 const CardModel = ({img, title, price, user, desc, city, id})=>{
 
-
+    let idImg = img.publicID    
     // const path = `../src/assets/imgs/${img}.jpg`
 
     const onClickHandle = async()=>{  
-    window.location.href = `./tour-details?${id}`
+    window.location.href = `./tour-details?id=${id}&img=${idImg}&title=${title}&price=${price}&user=${user}&desc=${desc}`
     }
   
     return (
-        <div className='wrapper my-5 mx-2'>
-            <Card style={{ width: '100%', marginBottom: '1.5rem'}} className = 'card-style'>
+        <div className='card-wrapper my-5 mx-2'>
+            <Card style={{ width: '100%', marginBottom: '1.5rem', borderTopLeftRadius: '5%', borderTopRightRadius: '5%', border: 'none'}}>
                 <AdvancedImage cldImg={img} className='card-image'/>
                 {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}
-                <Card.Body className = 'card-style bg-light'>
+                <Card.Body className = 'bg-light card-style'>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text className='text-dark text-opacity-50 fw-semibold'>
                    {desc}

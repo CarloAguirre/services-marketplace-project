@@ -11,17 +11,19 @@
    .card-image{
     min-height: 30vh;
     max-height: 30vh;
-    /* border-top-left-radius: 5%;
-    border-top-right-radius: 5%; */
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     /* width: 30vw; */
    }
 /* } */
 
 .card-style{
+    background-color: rgb(247, 240, 231);
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    background-color: rgb(247, 240, 231);
-    border: none !important;
+    height: 30vh;
 }
+
+
+
+
