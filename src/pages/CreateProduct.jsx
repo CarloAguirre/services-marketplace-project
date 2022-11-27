@@ -98,11 +98,15 @@ export const CreateProduct = () => {
 
 
   return (
-    <>
+
+    <div className='pb-5 body-bg'>
+
+    
     <header>
         {<NavModel name={name} />}
     </header>
-    <div className='form-wrapper'>
+    <h3 className='text-center mt-5'>Ingresa la información del Tour</h3>
+    <div className='form-wrapper__tour'>
             <form 
             className='login-form'
             onSubmit={onSubmit}
@@ -147,27 +151,31 @@ export const CreateProduct = () => {
                 value={ciudad}
                 onChange={onInputchange}
                 >
-                    <option>Arica</option>
-                    <option>Iquique</option>
-                    <option>Antofagasta</option>
-                    <option>Copiapó</option>
-                    <option>Coquimbo</option>
-                    <option>La Serena</option>
+                    <option>Pueblo</option>
                     <option>Vicuña</option>
-                    <option>Valparaiso</option>
-                    <option>Viña del Mar</option>
-                    <option>Talca</option>
-                    <option>Rancagua</option>
-                    <option>Concepción</option>
-                    <option>Valdivia</option>
-                    <option>Puerto Varas</option>
-                    <option>Puerto Montt</option>
-                    <option>Temuco</option>
-                    <option>Chillán</option>
-                    <option>Osorno</option>
-                    <option>Puerto Williams</option>
-                    <option>Punta Arenas</option>
-                    <option>Rapa-Nui</option>
+                    <option>La Serena</option>
+                    <option>Diaguitas</option>
+                    <option>Quebrada de Talca</option>
+                    <option>Quebrada El Arrayan</option>
+                    <option>Marqueza</option>
+                    <option>Pelicana</option>
+                    <option>El Molle</option>
+                    <option>El Almendral</option>
+                    <option>Puclaro</option>
+                    <option>El Tambo</option>
+                    <option>Rivadavia</option>
+                    <option>San Isidro</option>
+                    <option>Paiguano</option>
+                    <option>Peralillo</option>
+                    <option>Varillar</option>
+                    <option>Chapilca</option>
+                    <option>Guanta</option>
+                    <option>Monte Grande</option>
+                    <option>Pisco Elqui</option>
+                    <option>Cochiguaz</option>
+                    <option>El Cepo</option>
+                    <option>Alcohuaz</option>
+                    <option>Horcón</option>
                 </select>
                 <label htmlFor="floatingSelect">Ciudad</label>
             </div>
@@ -305,8 +313,9 @@ export const CreateProduct = () => {
             <button type="submit" className="btn btn-primary create-account__button mt-4">Crear Tour</button>
             </form>
         </div>
-            <div id='errorMsg' className='text-center' ></div>
-    
-    </>
+            <div id='errorMsg' className='text-center mb-5' ></div>
+
+    </div>
+
   )
 }

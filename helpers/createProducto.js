@@ -80,16 +80,19 @@ export const createProducto = async(nombre, categoria, precio, descripcion, ciud
         window.location.href = "./upload-service-image"
     })
     .catch(function ({response}) {
-        // console.log(response)
-        let msg1 = response.data.msg;
-        let msg2 =response.data.errors[0].msg  
+        console.log(response.data)
 
-        console.log(msg2)       
+        if(response.data.msg){
+            let msg1 = response.data.msg;
+            document.getElementById('errorMsg').innerHTML = `
+            <p>
+                ${msg1}
+            </p>` 
+            return;
+        }
 
-        document.getElementById('errorMsg').innerHTML = `
-        <p>
-            ${msg1}
-        </p>` 
+        let msg2 =response.data.errors[0].msg        
+
         
         document.getElementById('errorMsg').innerHTML = `
         <p>

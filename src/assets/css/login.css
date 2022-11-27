@@ -5,9 +5,43 @@
     justify-content: center;
     align-items: center;  
     margin: 20vh auto;
-    background-color: rgb(233, 237, 240);
+    background-color: #212529;
+    border-radius: 10%;
+    max-width: 20vw;
+}
+
+.form-wrapper__tour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin: 2vh auto 20vh auto;
+    background-color: #212529;
     border-radius: 10%;
     max-width: 40vw;
+    color: rgb(164, 172, 181);
+}
+
+
+@media (max-width: 1320px ){
+    .form-wrapper__tour{
+        max-width: 50vw;
+    }
+   
+}
+
+@media (max-width: 1050px ){
+    .form-wrapper__tour{
+        max-width: 65vw;
+    }
+   
+}
+
+@media (max-width: 750px ){
+    .form-wrapper__tour{
+        max-width: 70vw;
+    }
+   
 }
 
 .form-wrapper__create-account{
@@ -52,4 +86,9 @@
     
 }
 
+.body-bg{
+    background-color: #c84614;
+    min-width: 100vw;
+
+}
 
