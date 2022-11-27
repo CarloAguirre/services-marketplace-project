@@ -31,7 +31,7 @@ export const TourDetails = () => {
         <header>
             {<NavModel name={name} />}
         </header>
-        <div className=''>
+        <div>
             <Tabs
             defaultActiveKey="profile"
             id="fill-tab-example"
@@ -48,11 +48,11 @@ export const TourDetails = () => {
                 <Tab eventKey="home" title="Requerimientos" className='tab tabs-bg'>
                  <List /> 
                 </Tab>
-                <Tab eventKey="longer-tab" title="Loooonger Tab" className='tab tabs-bg'>
+                <Tab eventKey="longer-tab" title="Garantia" className='tab tabs-bg'>
                     <Preference />
                     
                 </Tab>
-                <Tab eventKey="contact" title="Contact" className='tab tabs-bg'>
+                <Tab eventKey="contact" title="Reservar" className='tab tabs-bg'>
                     
                 </Tab>
             </Tabs>

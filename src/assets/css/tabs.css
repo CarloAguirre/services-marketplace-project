@@ -7,7 +7,12 @@
 }
 
 .nav-link{
-    color: black !important;
+    color: #343a40 !important;
+    font-weight:600 !important;
+    font-size: large !important;
+    min-height: 3rem !important;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .5px;
 }
 
 .nav-tabs .nav-link.active{
@@ -16,4 +21,33 @@
 
 .tab-content{
     margin-top: -1rem;
+}
+
+.nav-tabs .nav-link{
+    border: var(--bs-nav-tabs-border-width) solid #bcbcbc !important;
+}
+
+.nav-tabs .nav-link:hover{
+    border: var(--bs-nav-tabs-border-width) solid #343a40!important;
+    border-bottom: none;
+
+}
+
+.text-light {
+    font-weight: 900 !important;
+}
+
+.list-label{
+    background-color: #c6582d !important;
+}
+
+p, li, .list-label{
+    font-family: 'Hind Guntur', sans-serif;
+    font-weight: bolder;
+}
+
+
+h1, h3{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .5px;
 }

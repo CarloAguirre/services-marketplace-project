@@ -5,8 +5,10 @@ import Cookies from 'universal-cookie'
 import { cargarImagen } from '../../helpers/cargarImagen'
 import { NavModel } from '../components/NavModel'
 import '../assets/css/login.css'
+import { cargarImagenItinerario } from '../../helpers/cargarImagenItinerario'
 
-export const CargarImagenProducto = () => {
+
+export const CargarImagenItinerario = () => {
 
     const cookies = new Cookies();
     const id = cookies.get("id")
@@ -26,7 +28,7 @@ export const CargarImagenProducto = () => {
         event.preventDefault();
         
         (archivo)
-            ? await cargarImagen(archivo, id)
+            ? await cargarImagenItinerario(archivo, id)
             : document.getElementById('errorMsg').innerHTML = `
             <p>
                 No haz cargado ninguna imagen.
@@ -40,13 +42,13 @@ export const CargarImagenProducto = () => {
         {<NavModel name={name} />}
     </header>
     <div className='form-wrapper'>
-    <h3 className='text-center mt-3'>Carga una imagen para la portada de tu tour</h3>
+        <h3 className='text-center mt-3'>Carga una imagen para la descripcion de tu tour</h3>
     <form 
         className='login-form'
         >
         <div className="mb-3">
         <div className="mb-3">
-            <label htmlFor="formFile" className="form-label">Seleciona una imagen para la portada de tu servicio</label>
+            <label htmlFor="formFile" className="form-label">Sube una imagen para el itinerario de tu servicio</label>
             <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
         </div>
         </div>

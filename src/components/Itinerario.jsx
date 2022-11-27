@@ -18,7 +18,7 @@ import {image} from "@cloudinary/url-gen/qualifiers/source";
 import {Position} from "@cloudinary/url-gen/qualifiers/position";
 import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 
-import '../assets/css/root.css'
+import '../assets/css/tabs.css'
 
 
 export const Itinerario = ({nombre, img, desc}) => {
@@ -41,12 +41,12 @@ export const Itinerario = ({nombre, img, desc}) => {
   return (
 
     <div>
-        <h3 className="pt-5 mx-2 mb-5 text-light text-center">{nombre}</h3>
+        <h1 className="pt-5 mx-2 mb-5 text-light text-center">{nombre}</h1>
         <div className="d-flex justify-content-center container">
         <Row className="d-flex justify-content-center">      
             <Col sm={12} lg={6}> <AdvancedImage cldImg={myImage} style={{ maxWidth: '90vw' }} className="container"/></Col>
             <Col sm={12} lg={6}>
-                <p style={{ color: 'white', marginTop: '6rem', maxWidth: '90vw' }} className="ps-2">"{desc}"</p>
+                <p style={{ color: 'white', marginTop: '6rem', maxWidth: '90vw', fontWeight: 'bold' }} className="ps-2">"{desc}"</p>
                 <img src="../public/montañas.png"  alt="montañas" style={{ maxWidth: '90vw', marginTop: '4rem' }} className="ps-2" />
             </Col>
                    
@@ -54,12 +54,13 @@ export const Itinerario = ({nombre, img, desc}) => {
         </div>
         <div className='container'>
             <h3 className="mt-5 mx-2 px-5 text-light">Itinerario:</h3>
-            <p className="mt-2 px-5 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
+            <p className="mt-3 px-5 mx-2"  style={{fontWeight: 'bold', fontSize: 'larger'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
                 exercitationem hic voluptatum soluta dolor libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
                 exercitationem hic voluptatum soluta dolor libero. 
-            </p>
+            
             <br />
-            <p className="mt-2 px-5 mx-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
             exercitationem hic voluptatum soluta dolor libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
             exercitationem hic voluptatum soluta dolor libero. 
             </p>

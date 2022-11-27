@@ -5,7 +5,6 @@ import { NavModel } from '../components/NavModel';
 import '../assets/css/home.css'
 import { FiltersModel } from '../components/FiltersModel';
 import { CardGrid } from '../components/CardGrid';
-import '../assets/css/root.css'
 import '../assets/css/card.css'
 
 export const Home = () => {

@@ -7,15 +7,55 @@
     border-radius: 10%;
 }
 
-/* @media (min-width: 768px){ */
+
    .card-image{
-    min-height: 30vh;
-    max-height: 30vh;
+    min-height: 35vh;
+    max-height: 35vh;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     /* width: 30vw; */
    }
-/* } */
+   @media (max-width: 1399px){
+    .card-image{
+      min-height: 30vh;
+      max-height: 30vh;
+    }
+ }
+
+ @media (max-width: 1199px){
+    .card-image{
+      min-height: 45vh;
+      max-height: 45vh;
+    }
+ }
+
+ @media (max-width: 991px){
+  .card-image{
+    min-height: 30vh;
+    max-height: 30vh;
+  }
+}
+   @media (max-width: 767px){
+      .card-image{
+        min-height: 45vh;
+        max-height: 45vh;
+      }
+   }
+
+
+   @media (max-width: 545px){
+      .card-image{
+        min-height: 40vh;
+        max-height: 40vh;
+      }
+   }
+
+   @media (max-width: 490px){
+    .card-image{
+      min-height: 35vh;
+      max-height: 35vh;
+    }
+ }
 
 .card-style{
     background-color: rgb(247, 240, 231);

@@ -1,7 +1,7 @@
 import FormData from 'form-data'
 import Cookies from 'universal-cookie'
 
-export const cargarImagen = async(archivo, id)=>{
+export const cargarImagenItinerario = async(archivo, id)=>{
 
     const cookies = new Cookies();
     const idtour = cookies.get("id")
@@ -41,10 +41,8 @@ export const cargarImagen = async(archivo, id)=>{
     await fetch(`https://restserver-crud-avanzado.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
     .then(response => {
         response.text()
-        cookies.set('id', idtour);
-        cookies.set('nombre', nombreUser);
-        // alert(`${nombreUser} haz crado correctamente tu tour`)
-        window.location.href = "./upload-service-imag2"
+        alert(`${nombreUser} haz crado correctamente tu tour`)
+        window.location.href = "./"
     })
     .catch(error => console.log( error));
                  

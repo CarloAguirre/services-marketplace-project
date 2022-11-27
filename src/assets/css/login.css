@@ -6,8 +6,8 @@
     align-items: center;  
     margin: 20vh auto;
     background-color: rgb(233, 237, 240);
-    border-radius: 5%;
-    max-width: 25vw;
+    border-radius: 10%;
+    max-width: 40vw;
 }
 
 .form-wrapper__create-account{
@@ -27,7 +27,7 @@
     }
    
 }
-@media (max-width: 735px){
+@media (max-width: 1050px){
     .form-wrapper{
         max-width: 70vw; 
     }

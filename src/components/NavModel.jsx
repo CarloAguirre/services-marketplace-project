@@ -20,8 +20,8 @@ export const NavModel = ({name}) => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav me-5">
-                    <a className="nav-link link-light active link-light" aria-current="page" href="/">Inicio</a>
-                    <a className="nav-link link-light nav-hover" href="/login">Iniciar Sesión</a>
+                    <a className="nav-link link-light active link-light mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
+                    <a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
                     {
                         (name)
                             ? <NavUserFunctions name={name}/> 
