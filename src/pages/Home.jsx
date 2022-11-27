@@ -9,6 +9,7 @@ import '../assets/css/card.css'
 
 export const Home = () => {
 
+    let page = 'home';
     const cookies = new Cookies();
 
     console.log(cookies.get("name"))
@@ -23,7 +24,7 @@ export const Home = () => {
     <div className='principal'>
 
     <header>
-      {<NavModel name ={name} />}
+      {<NavModel name ={name} pagina={page}/>}
     </header>
 
       

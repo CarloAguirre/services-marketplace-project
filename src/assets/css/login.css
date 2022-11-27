@@ -22,6 +22,43 @@
     color: rgb(164, 172, 181);
 }
 
+@media (max-width: 1550px ){
+    .form-wrapper{
+        max-width: 30vw;
+    }
+   
+}
+
+@media (max-width: 1200px ){
+    .form-wrapper{
+        max-width: 35vw;
+    }
+   
+}
+
+@media (max-width: 1050px){
+    .form-wrapper{
+        max-width: 40vw; 
+    }
+   
+}
+
+@media (max-width: 845px){
+    .form-wrapper{
+        max-width: 50vw; 
+    }
+   
+}
+
+@media (max-width: 700px){
+    .form-wrapper{
+        max-width: 70vw; 
+    }
+   
+}
+
+
+
 
 @media (max-width: 1320px ){
     .form-wrapper__tour{
@@ -55,18 +92,7 @@
     max-width: 25vw;
 }
 
-@media (max-width: 1120px){
-    .form-wrapper{
-        max-width: 40vw; 
-    }
-   
-}
-@media (max-width: 1050px){
-    .form-wrapper{
-        max-width: 70vw; 
-    }
-   
-}
+
 
 
 .login-form {    
@@ -89,6 +115,7 @@
 .body-bg{
     background-color: #c84614;
     min-width: 100vw;
+    min-height: 100vh;
 
 }
 

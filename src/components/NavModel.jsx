@@ -2,8 +2,9 @@
 import '../assets/css/navbar.css'
 import { NavUserFunctions } from './NavUserFunctions'
 
-export const NavModel = ({name}) => {
+export const NavModel = ({name, pagina}) => {
 
+    const fromPage = pagina;
     return (
     
 
@@ -20,11 +21,20 @@ export const NavModel = ({name}) => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav me-5">
-                    <a className="nav-link link-light active link-light mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
-                    <a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                    {
+                        (fromPage === 'home')
+                                ? <a className="nav-link link-light mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
+                    }
+                    {
+                        (fromPage === 'login')
+                                ? <a className="nav-link link-light mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                    }
+                    
                     {
                         (name)
-                            ? <NavUserFunctions name={name}/> 
+                            ? <NavUserFunctions name={name} paginaDesde={fromPage}/> 
                             : null                          
                     }
                 </div>

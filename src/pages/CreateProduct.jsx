@@ -8,6 +8,7 @@ import { createProducto } from '../../helpers/createProducto'
 
 
 export const CreateProduct = () => {
+    const page = 'createProduct'
 
     const cookies = new Cookies();
 
@@ -103,7 +104,7 @@ export const CreateProduct = () => {
 
     
     <header>
-        {<NavModel name={name} />}
+        {<NavModel name={name} pagina={page} />}
     </header>
     <h3 className='text-center mt-5'>Ingresa la información del Tour</h3>
     <div className='form-wrapper__tour'>
@@ -310,10 +311,10 @@ export const CreateProduct = () => {
                 onChange={onInputchange}
                 />
             </div>
-            <button type="submit" className="btn btn-primary create-account__button mt-4">Crear Tour</button>
+            <button type="submit" className="btn btn-primary create-account__button btn-lg mt-5">Crear Tour</button>
             </form>
         </div>
-            <div id='errorMsg' className='text-center mb-5' ></div>
+            <div id='errorMsg' className='text-center mb-3' ></div>
 
     </div>
 

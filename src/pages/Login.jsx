@@ -9,6 +9,8 @@ import { loginFetch } from '../../helpers/loginFetch'
 
 export const Login = () => {
 
+    const page = 'login'
+
     const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/auth/login`
 
     const cookies = new Cookies();
@@ -40,55 +42,51 @@ export const Login = () => {
             
 
   return (
-    <>
-    <header>
-      {<NavModel name ={name} />}
-    </header>
-    <div className='form-wrapper'>
-        <form 
-        className='login-form'
-        >
-        <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
-            <input 
-            type="email" 
-            className="form-control" 
-            id="exampleInputEmail1" 
-            aria-describedby="emailHelp"
-            placeholder='Correo electronico' 
-            name='email'
-            value={email}
-            onChange={onInputchange}
-            />
-            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">Constraseña</label>
-            <input 
-            type="password" 
-            className="form-control" 
-            id="exampleInputPassword1"
-            placeholder='Tu clave'
-            name='password'
-            value = {password}
-            onChange = {onInputchange}
-            
-            />
-        </div>
-        <div className="mb-3 form-check">
-            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-            <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Iniciar sesión</button>
-        <hr />
-        </form>
-        <div>
-          <a href="/create-account">
-          <button className="btn btn-success mb-4">Crear Cuenta</button>
-          </a>
-        </div>
+    <div className='pb-5 body-bg'>
+      <header>
+        {<NavModel name ={name} pagina={page} />}
+      </header>
+      <div className='form-wrapper'>
+          <form 
+          className='login-form'
+          >
+          <div className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
+              <input 
+              type="email" 
+              className="form-control" 
+              id="exampleInputEmail1" 
+              aria-describedby="emailHelp"
+              placeholder='Correo electronico' 
+              name='email'
+              value={email}
+              onChange={onInputchange}
+              />
+              <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div className="mb-3">
+              <label htmlFor="exampleInputPassword1" className="form-label">Constraseña</label>
+              <input 
+              type="password" 
+              className="form-control" 
+              id="exampleInputPassword1"
+              placeholder='Tu clave'
+              name='password'
+              value = {password}
+              onChange = {onInputchange}
+              
+              />
+          </div>
+          <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Iniciar sesión</button>
+          <hr />
+          </form>
+          <div>
+            <a href="/create-account">
+            <button className="btn btn-success mb-4">Crear Cuenta</button>
+            </a>
+          </div>
+      </div>
+      <div id='errorMsg' className='text-center' ></div>
     </div>
-    <div id='errorMsg' className='text-center' ></div>
-    </>
   )
 }
