@@ -12,14 +12,6 @@ export const Home = () => {
     let page = 'home';
     const cookies = new Cookies();
 
-    console.log(cookies.get("name"))
-    console.log(cookies.get("email"))
-    console.log(cookies.get("uid"))
-    console.log(cookies.get("token"))
-
-  
-    
-
   return (
     
     <div className='principal'>

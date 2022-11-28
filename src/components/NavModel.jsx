@@ -43,11 +43,11 @@ export const NavModel = ({pagina}) => {
                     {
                         (fromPage === 'login')
                                 ? (token)
-                                    ?<a className="nav-link link-light nav-hover mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    ?<a className="nav-link link-light mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
                                     :<a className="nav-link link-light  mt-4" href="/login"> <p>Iniciar Sesión</p></a>
                                 : (token)
                                     ?<a className="nav-link link-light nav-hover mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
-                                    :<a className="nav-link link-light mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                    :<a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
                     }
                     {
                         (token)
