@@ -62,7 +62,7 @@ export const Login = () => {
               value={email}
               onChange={onInputchange}
               />
-              <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+              <div id="emailHelp" className="form-text">No compartas esta información con nadie.</div>
           </div>
           <div className="mb-3">
               <label htmlFor="exampleInputPassword1" className="form-label">Constraseña</label>
@@ -82,7 +82,7 @@ export const Login = () => {
           </form>
           <div>
             <a href="/create-account">
-            <button className="btn btn-success mb-4">Crear Cuenta</button>
+            {/* <button className="btn btn-success mb-4">Crear Cuenta</button> */}
             </a>
           </div>
       </div>
