@@ -17,14 +17,15 @@ export const Home = () => {
     console.log(cookies.get("uid"))
     console.log(cookies.get("token"))
 
-    const name = cookies.get("name")
+  
+    
 
   return (
     
     <div className='principal'>
 
     <header>
-      {<NavModel name ={name} pagina={page}/>}
+      {<NavModel  pagina={page}/>}
     </header>
 
       

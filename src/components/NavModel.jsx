@@ -1,8 +1,22 @@
-// import Cookies from 'universal-cookie'
+import Cookies from 'universal-cookie'
 import '../assets/css/navbar.css'
 import { NavUserFunctions } from './NavUserFunctions'
 
-export const NavModel = ({name, pagina}) => {
+export const NavModel = ({pagina}) => {
+
+    const cookies = new Cookies();
+    
+    const name = cookies.get("name")
+    const token = cookies.get("token")
+
+
+    const onClickHandle = ()=>{
+        cookies.remove("nombre")
+        cookies.remove("token")
+        cookies.remove("email")
+
+        window.location.href = "./"
+    }
 
     const fromPage = pagina;
     return (
@@ -28,15 +42,19 @@ export const NavModel = ({name, pagina}) => {
                     }
                     {
                         (fromPage === 'login')
-                                ? <a className="nav-link link-light mt-4" href="/login"> <p>Iniciar Sesión</p></a>
-                                : <a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                ? (token)
+                                    ?<a className="nav-link link-light nav-hover mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    :<a className="nav-link link-light  mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                : (token)
+                                    ?<a className="nav-link link-light nav-hover mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    :<a className="nav-link link-light mt-4" href="/login"> <p>Iniciar Sesión</p></a>
                     }
-                    
                     {
-                        (name)
+                        (token)
                             ? <NavUserFunctions name={name} paginaDesde={fromPage}/> 
                             : null                          
                     }
+                    
                 </div>
                 </div>
             </div>

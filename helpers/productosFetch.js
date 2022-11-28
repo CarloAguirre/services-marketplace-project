@@ -76,10 +76,8 @@ export const productInfoFetch = async()=>{
 
  await axios(config)
   .then((response) => {
-    // console.log(response.data.productos)
-    const {productos} = response.data;
 
-    console.log(response.data)
+    const {productos} = response.data;
 
     const cld = new Cloudinary({
       cloud: {
@@ -121,7 +119,7 @@ export const productInfoFetch = async()=>{
         let img2Id = img2IdUndotted[img2IdUndotted.length-2]
 
         img2Array.push(img2Id);
-        (console.log(img2Id))
+
   
       }else{
         let img2Id = "no-image_nkv8ft"
