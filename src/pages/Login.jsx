@@ -46,6 +46,7 @@ export const Login = () => {
       <header>
         {<NavModel name ={name} pagina={page} />}
       </header>
+      <h3 className='text-center mt-5'>Área solo para la Administración</h3>
       <div className='form-wrapper'>
           <form 
           className='login-form'

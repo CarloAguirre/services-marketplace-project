@@ -101,7 +101,7 @@ export const CreateProduct = () => {
 
   return (
 
-    <div className='pb-5 body-bg'>
+    <div className='pb-5 body-bg__createTour'>
 
     
     <header>

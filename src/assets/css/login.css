@@ -100,7 +100,8 @@
     padding: 1.5rem; 
     margin-left: 2rem;
     margin-right: 2rem;
-    border-radius: 5%; 
+    border-radius: 5%;
+    color: rgb(177, 183, 193); 
 } 
 
 .create-account__button{
@@ -116,6 +117,16 @@
     background-color: #c84614;
     min-width: 100vw;
     min-height: 100vh;
+}
+.body-bg h3{
+    padding-top: 10rem;
+    margin-bottom: -10rem;
+    font-size:xx-large;
+}
 
+.body-bg__createTour{
+    background-color: #c84614;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 

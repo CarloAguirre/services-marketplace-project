@@ -10,6 +10,8 @@ import { cargarImagenItinerario } from '../../helpers/cargarImagenItinerario'
 
 export const CargarImagenItinerario = () => {
 
+    const page = 'createProduct'
+
     const cookies = new Cookies();
     const id = cookies.get("id")
     const name = cookies.get('name');
@@ -38,24 +40,26 @@ export const CargarImagenItinerario = () => {
   return (
 
     <>
-    <header>
-        {<NavModel name={name} />}
-    </header>
-    <div className='form-wrapper'>
-        <h3 className='text-center mt-3'>Carga una imagen para la descripcion de tu tour</h3>
-    <form 
-        className='login-form'
-        >
-        <div className="mb-3">
-        <div className="mb-3">
-            <label htmlFor="formFile" className="form-label">Sube una imagen para el itinerario de tu servicio</label>
-            <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
+    <div className='body-bg'>
+        <header>
+            {<NavModel name={name} pagina={page} />}
+        </header>
+            <h3 className='text-center mt-3'>Carga una imagen para la descripcion de tu tour</h3>
+        <div className='form-wrapper'>
+        <form 
+            className='login-form'
+            >
+            <div className="mb-3">
+            <div className="mb-3">
+                <label htmlFor="formFile" className="form-label">Sube una imagen para el itinerario de tu servicio</label>
+                <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
+            </div>
+            </div>
+            <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Cargar Foto</button>
+            </form>
         </div>
-        </div>
-        <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Cargar Foto</button>
-        </form>
+        <div id='errorMsg' className='text-center' ></div> 
     </div>
-    <div id='errorMsg' className='text-center' ></div> 
     </>
 
   )

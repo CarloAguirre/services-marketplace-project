@@ -8,6 +8,8 @@ import '../assets/css/login.css'
 
 export const CargarImagenProducto = () => {
 
+    const page = 'createProduct'
+
     const cookies = new Cookies();
     const id = cookies.get("id")
     const name = cookies.get('name');
@@ -36,24 +38,26 @@ export const CargarImagenProducto = () => {
   return (
 
     <>
-    <header>
-        {<NavModel name={name} />}
-    </header>
-    <div className='form-wrapper'>
-    <h3 className='text-center mt-3'>Carga una imagen para la portada de tu tour</h3>
-    <form 
-        className='login-form'
-        >
-        <div className="mb-3">
-        <div className="mb-3">
-            <label htmlFor="formFile" className="form-label">Seleciona una imagen para la portada de tu servicio</label>
-            <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
+    <div className='body-bg'>
+        <header>
+            {<NavModel name={name} pagina={page}/>}
+        </header>
+        <h3 className='text-center mt-5'>Carga una imagen para la portada de tu tour</h3>
+        <div className='form-wrapper'>
+        <form 
+            className='login-form'
+            >
+            <div className="mb-3">
+            <div className="mb-3">
+                <label htmlFor="formFile" className="form-label">Seleciona una imagen para la portada de tu servicio</label>
+                <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
+            </div>
+            </div>
+            <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Cargar Foto</button>
+            </form>
         </div>
-        </div>
-        <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Cargar Foto</button>
-        </form>
+        <div id='errorMsg' className='text-center' ></div> 
     </div>
-    <div id='errorMsg' className='text-center' ></div> 
     </>
 
   )
