@@ -51,6 +51,7 @@ export const createProducto = async(nombre, categoria, precio, descripcion, ciud
         "necesario12": necesario12,
         "necesario13": necesario13,
         "necesario14": necesario14,
+        "necesario15": necesario15,
         "necesario16": necesario16,
         "necesario17": necesario17,
         "necesario18": necesario18,

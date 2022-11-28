@@ -21,7 +21,7 @@ import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 import '../assets/css/tabs.css'
 
 
-export const Itinerario = ({nombre, img, desc}) => {
+export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo}) => {
  
 
     const cld = new Cloudinary({
@@ -54,25 +54,32 @@ export const Itinerario = ({nombre, img, desc}) => {
         </div>
         <div className='container'>
             <h3 className="mt-5 mx-2 px-5 text-light">Itinerario:</h3>
-            <p className="mt-3 px-5 mx-2"  style={{fontWeight: 'bold', fontSize: 'larger'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
-                exercitationem hic voluptatum soluta dolor libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
-                exercitationem hic voluptatum soluta dolor libero. 
-            
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
-            exercitationem hic voluptatum soluta dolor libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis dolor veritatis nihil aut dicta amet. Culpa quae, sint optio magni id ipsum repellendus, 
-            exercitationem hic voluptatum soluta dolor libero. 
-            </p>
+            <p className="mt-3 px-5 mx-2"  style={{fontWeight: 'bold', fontSize: 'larger'}}>{itinerario}</p>
 
 
             <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
             <div className='pb-5'>
                 <ul className="list-group list-group-horizontal justify-content-center my-5">
-                    <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> 6.000 </li>
-                    <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> media </li>
-                    <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> 30km </li>
-                    <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> 4 horas </li>
+                    {
+                        (altura === "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
+                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
+                    }
+                    {
+                        (dificultad === "")
+                            ?<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
+                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                    }
+                    {
+                        (distancia=== "")
+                            ?<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
+                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                    }
+                    {
+                        (tiempo === "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
+                    }
                 </ul>
             </div>
         </div>

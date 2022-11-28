@@ -274,7 +274,7 @@ export const CreateProduct = () => {
             <input className="form-control" name='noIncluye6' value={noIncluye6} onChange={onInputchange} type="text" placeholder="No incluye..." aria-label="default input example"></input><br />
             <hr />
 
-            {/* Cesesario traer */}
+            {/* necesario traer */}
             <label htmlFor="floatingTextarea2">Cada pasajero debe traer:</label>
             <input className="form-control" name='necesario1' value={necesario1} onChange={onInputchange} type="text" placeholder="item 1" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario2' value={necesario2} onChange={onInputchange} type="text" placeholder="item 2" aria-label="default input example"></input><br />
