@@ -68,7 +68,9 @@ export const TourDetails = () => {
     let necesario18 = params.get('necesario18Detail');
     let necesario19 = params.get('necesario19Detail');
     let necesario20 = params.get('necesario20Detail');
-    let necesario21 = params.get('necesario21Detail');    
+    let necesario21 = params.get('necesario21Detail');
+    let img2 = params.get('img2Detail');   
+
     
   return (
     <>
@@ -88,7 +90,7 @@ export const TourDetails = () => {
             >
                 <Tab eventKey="profile" title="Itinerario" className='tab tabs-bg'> 
                 {               
-                (title)?<Itinerario nombre={title} img={img} desc={desc} itinerario={itinerario} altura={altura} distancia={distancia} dificultad={dificultad} tiempo={tiempo}/>
+                (title)?<Itinerario nombre={title} img={img} desc={desc} itinerario={itinerario} altura={altura} distancia={distancia} dificultad={dificultad} tiempo={tiempo} img2={img2}/>
                 :null
                 }
                     

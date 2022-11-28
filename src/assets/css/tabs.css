@@ -51,3 +51,7 @@ h1, h3{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: .5px;
 }
+
+.image{
+    max-width: 45vw;
+}

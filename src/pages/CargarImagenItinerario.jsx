@@ -44,7 +44,7 @@ export const CargarImagenItinerario = () => {
         <header>
             {<NavModel name={name} pagina={page} />}
         </header>
-            <h3 className='text-center mt-3'>Carga una imagen para la descripcion de tu tour</h3>
+            <h3 className='text-center mt-3'>2- Carga una imagen para la descripcion de tu tour</h3>
         <div className='form-wrapper'>
         <form 
             className='login-form'

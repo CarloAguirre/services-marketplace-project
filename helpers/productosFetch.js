@@ -121,6 +121,7 @@ export const productInfoFetch = async()=>{
         let img2Id = img2IdUndotted[img2IdUndotted.length-2]
 
         img2Array.push(img2Id);
+        (console.log(img2Id))
   
       }else{
         let img2Id = "no-image_nkv8ft"

@@ -21,9 +21,10 @@ import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 import '../assets/css/tabs.css'
 
 
-export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo}) => {
+export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo, img2}) => {
  
 
+    
     const cld = new Cloudinary({
     cloud: {
         cloudName: 'dubwhwd1w'
@@ -38,6 +39,11 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
     // .rotate(byAngle(3))  // Rotate the result.
     .format('png');   // Deliver as PNG. */
 
+
+    const myImage2 = cld.image(`${img2}`);
+    myImage2
+    .roundCorners(byRadius(10))
+    .format('png');
   return (
 
     <div>
@@ -59,7 +65,7 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
 
             <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
             <div className='pb-5'>
-                <ul className="list-group list-group-horizontal justify-content-center my-5">
+                <ul className="list-group list-group-horizontal justify-content-center mt-5">
                     {
                         (altura === "")
                             ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
@@ -83,6 +89,9 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
                 </ul>
             </div>
         </div>
+        <Row className="d-flex justify-content-center">
+        <Col sm={12} lg={8} xl={6}><AdvancedImage cldImg={myImage2}  className="container d-flex pb-5 justify-content-center image2"/></Col>
+        </Row>
     </div>
 
   )
