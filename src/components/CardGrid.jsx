@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Cloudinary} from "@cloudinary/url-gen";
+import '../assets/css/filters.css'
 
 
 import { productInfoFetch } from '../../helpers/productosFetch';
@@ -18,18 +19,30 @@ export const CardGrid = () => {
 
   const [imageIdArray, setImageIdArray] = useState([[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []])
   
-  const getImagesID = async()=>{
+  const getImagesID = async(categoria)=>{
     
-    await productInfoFetch()
+    await productInfoFetch(categoria)
     .then(response =>{
       // console.log(response)
       setImageIdArray(response);
     })
   };
+  
+  const onCategoryChange = async({target})=>{
+    const {value} = target 
+    
+    await productInfoFetch(value)
+    .then(response =>{
+      setImageIdArray(response);
+    })
+  }
+
+
 
   useEffect(() => {
     getImagesID()
   }, [setImageIdArray])
+
 
 
   const cld = new Cloudinary({
@@ -561,7 +574,7 @@ const onClickNextPage = ({target})=>{
   
   if(target.name === 'next'){
 
-    console.log('next')
+    // console.log('next')
     let i = '';
     
     for(i=6; i<imageIdArray[0].length; i++){
@@ -683,6 +696,19 @@ const onClickNextPage = ({target})=>{
    
     return (
 <> 
+
+          {/* filter */}
+        <div className='filters-wrapper'>
+          <div className="form-floating form-control filter-custom">
+            <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={onCategoryChange}>
+                <option className='text-center' value={''}>Categorias</option>
+                <option value={'6341e2381a3fb2d4e2251ce2'} className='text-center' >Trekking</option>
+                <option value={'63488753cf489b14f0e4c8e1'} className='text-center' >Ciclismo</option>
+                <option className='text-center' >Three</option>
+            </select>
+            <label htmlFor="floatingSelect" className='text-center'>Filtra por Categoria</label>
+          </div>       
+        </div>
 
       <div className='mx-3'>
       <Container>

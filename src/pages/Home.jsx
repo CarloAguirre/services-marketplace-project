@@ -3,18 +3,13 @@ import Cookies from 'universal-cookie'
 
 import { NavModel } from '../components/NavModel';
 import '../assets/css/home.css'
-import { FiltersModel } from '../components/FiltersModel';
 import { CardGrid } from '../components/CardGrid';
 import '../assets/css/card.css'
 
 export const Home = () => {
 
     let page = 'home';
-    const cookies = new Cookies();
-
-    const token = cookies.get("toker")
-    console.log(token)
-
+    
   return (
     
     <div className='principal'>
@@ -22,13 +17,6 @@ export const Home = () => {
     <header>
       {<NavModel pagina={page}/>}
     </header>
-
-      
-      {/* <div className='filters-wrapper'>
-      {<FiltersModel />}
-      {<FiltersModel />}
-      {<FiltersModel />}
-    </div> */}
 
       <div className='background-body'>
         {<CardGrid />}

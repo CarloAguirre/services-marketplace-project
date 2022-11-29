@@ -111,13 +111,16 @@ export const CreateProduct = () => {
             className='login-form'
             onSubmit={onSubmit}
             >
+    <div className='flex-box__row'>
+        <div className='flex-box'>
+
             <div className="mb-3">
                 <label className="form-label">Nombre del Tour (max: 30 caracteres)</label>
                 <input 
                 type="text" 
                 maxLength="30"
                 className="form-control" 
-                placeholder='Tekking cerro mamalluca...' 
+                placeholder='Trekking cerro mamalluca...' 
                 name='nombre'
                 value={nombre}
                 onChange={onInputchange}
@@ -209,20 +212,21 @@ export const CreateProduct = () => {
                 ></textarea>
             </div>
             <hr />
+        </div>
 
+        <div className='flex-box'>
             <div className="mb-3">
                 <label className="form-label">Requisitos</label>
                 <input 
                 type="text" 
                 className="form-control" 
-                placeholder='Bloqueador solar, experiencia en...' 
+                placeholder='Experiencia en...' 
                 name='requisitos'
                 value={requisitos}
                 onChange={onInputchange}
                 />
             </div>
-            <hr />
-
+        
             {/* altura */}
             <label htmlFor="floatingTextarea2">Altura</label>
             <input className="form-control" name='altura' value={altura} onChange={onInputchange} type="text" placeholder="4.000 metros" aria-label="default input example"></input>
@@ -242,10 +246,13 @@ export const CreateProduct = () => {
             <label htmlFor="floatingTextarea2">Tiempo</label>
             <input className="form-control" name='tiempo' value={tiempo} onChange={onInputchange} type="text" placeholder="3 horas" aria-label="default input example"></input>
             <hr /> 
+        </div>
 
+        
+        <div className='flex-box'>
             {/* incluye */}
             <label htmlFor="floatingTextarea2">Incluye</label>
-            <input className="form-control" name='incluye1' value={incluye1} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
+            <input className="form-control" name='incluye1' value={incluye1} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />               
             <input className="form-control" name='incluye2' value={incluye2} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye3' value={incluye3} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye4' value={incluye4} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
@@ -253,6 +260,10 @@ export const CreateProduct = () => {
             <input className="form-control" name='incluye6' value={incluye6} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye7' value={incluye7} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye8' value={incluye8} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
+        </div>
+        <div className='flex-box'>
+        <br />
+        {/* <br /> */}
             <input className="form-control" name='incluye9' value={incluye9} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye10' value={incluye10} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye11' value={incluye11} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
@@ -261,6 +272,13 @@ export const CreateProduct = () => {
             <input className="form-control" name='incluye14' value={incluye14} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='incluye15' value={incluye15} onChange={onInputchange} type="text" placeholder="Incluye..." aria-label="default input example"></input><br />
             <hr />
+        </div>
+    </div>
+    <hr />
+
+    <div className='flex-box__row'>
+        <div className='flex-box'>
+
 
             {/* no incluye */}
             <label htmlFor="floatingTextarea2">No Incluye</label>
@@ -271,6 +289,9 @@ export const CreateProduct = () => {
             <input className="form-control" name='noIncluye5' value={noIncluye5} onChange={onInputchange} type="text" placeholder="No incluye..." aria-label="default input example"></input><br />
             <input className="form-control" name='noIncluye6' value={noIncluye6} onChange={onInputchange} type="text" placeholder="No incluye..." aria-label="default input example"></input><br />
             <hr />
+        </div>
+
+        <div className='flex-box'>
 
             {/* necesario traer */}
             <label htmlFor="floatingTextarea2">Cada pasajero debe traer:</label>
@@ -281,6 +302,9 @@ export const CreateProduct = () => {
             <input className="form-control" name='necesario5' value={necesario5} onChange={onInputchange} type="text" placeholder="item 5" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario6' value={necesario6} onChange={onInputchange} type="text" placeholder="item 6" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario7' value={necesario7} onChange={onInputchange} type="text" placeholder="item 7" aria-label="default input example"></input><br />
+        </div>
+        <div className='flex-box'>
+            <br />
             <input className="form-control" name='necesario8' value={necesario8} onChange={onInputchange} type="text" placeholder="item 8" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario9' value={necesario9} onChange={onInputchange} type="text" placeholder="item 9" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario10' value={necesario10} onChange={onInputchange} type="text" placeholder="item 10" aria-label="default input example"></input><br />
@@ -288,6 +312,9 @@ export const CreateProduct = () => {
             <input className="form-control" name='necesario12' value={necesario12} onChange={onInputchange} type="text" placeholder="item 12" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario13' value={necesario13} onChange={onInputchange} type="text" placeholder="item 13" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario14' value={necesario14} onChange={onInputchange} type="text" placeholder="item 14" aria-label="default input example"></input><br />
+        </div>
+        <div className='flex-box'>
+            <br />
             <input className="form-control" name='necesario15' value={necesario15} onChange={onInputchange} type="text" placeholder="item 15" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario16' value={necesario16} onChange={onInputchange} type="text" placeholder="item 16" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario17' value={necesario17} onChange={onInputchange} type="text" placeholder="item 17" aria-label="default input example"></input><br />
@@ -296,7 +323,14 @@ export const CreateProduct = () => {
             <input className="form-control" name='necesario20' value={necesario20} onChange={onInputchange} type="text" placeholder="item 20" aria-label="default input example"></input><br />
             <input className="form-control" name='necesario21' value={necesario21} onChange={onInputchange} type="text" placeholder="item 21" aria-label="default input example"></input><br />
             <hr />
+        </div>
+    </div>
 
+
+    
+        <div style={{maxWidth: '300px', margin: '4rem auto'}}>
+        <label htmlFor="floatingTextarea2">Precio</label>
+        <hr />
             <div className="input-group">
                 <span 
                 className="input-group-text">$</span>
@@ -308,8 +342,12 @@ export const CreateProduct = () => {
                 name='precio'
                 value={precio}
                 onChange={onInputchange}
+                
                 />
             </div>
+        </div>
+        
+
             <button type="submit" className="btn btn-primary create-account__button btn-lg mt-5">Crear Tour</button>
             </form>
         </div>

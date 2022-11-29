@@ -42,12 +42,12 @@ export const Login = () => {
             
 
   return (
-    <div className='pb-5 body-bg'>
+    <div className='pb-5 body-bg '>
       <header>
         {<NavModel name ={name} pagina={page} />}
       </header>
       <h3 className='text-center mt-5'>Área solo para Administradores</h3>
-      <div className='form-wrapper'>
+      <div className='form-wrapper d-flex'>
           <form 
           className='login-form'
           >
