@@ -74,14 +74,14 @@ export const createProducto = async(nombre, categoria, precio, descripcion, ciud
     .then(function (response) {
         const {nombre} = response.data
         
-        console.log(response.data._id)
+        // console.log(response.data._id)
         cookies.set('id', response.data._id, {"path": "/"})
 
         
         window.location.href = "./upload-service-image"
     })
     .catch(function ({response}) {
-        console.log(response.data)
+        // console.log(response.data)
 
         if(response.data.msg){
             let msg1 = response.data.msg;

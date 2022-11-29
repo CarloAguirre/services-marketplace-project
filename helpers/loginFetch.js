@@ -25,7 +25,6 @@ export const loginFetch = async(password, email)=>{
       .then((response) => {
 
         const {data} = response;
-        console.log(data.usuario);
 
         cookies.set('name', data.usuario.nombre, {"path": "/"});
         cookies.set('email', data.usuario.correo, {"path": "/"});

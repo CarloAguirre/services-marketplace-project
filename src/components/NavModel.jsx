@@ -25,8 +25,7 @@ export const NavModel = ({pagina}) => {
             <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid navbar-custom">
                 <div className="ms-4">
-                <a className="navbar-brand link-light fw-semibold ms-5" href="/">CABRA DEL VALLE
-                <span><img src="./src/assets/imgs/goat.png" alt="imagen de una cabra, logo de cabra del valle" className='ms-2'/></span>
+                <a className="navbar-brand link-light fw-semibold ms-5" href="/"><img src="./src/assets/imgs/goat.png" alt="imagen de una cabra, logo de cabra del valle" className='ms-2'/>
                 </a>
                 </div>
                 

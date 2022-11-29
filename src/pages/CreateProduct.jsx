@@ -93,8 +93,6 @@ export const CreateProduct = () => {
             ...formstate,
             [name]: value
         })
-
-        console.log(formstate)
     }
 
 

@@ -103,7 +103,7 @@ export const productInfoFetch = async()=>{
         imgIdArray.push(imgId);
   
       }else{
-        let imgId = "no-image_nkv8ft"
+        let imgId = "placeholder_ek6jcb"
         imgIdArray.push(imgId);
       }
 
@@ -122,7 +122,7 @@ export const productInfoFetch = async()=>{
 
   
       }else{
-        let img2Id = "no-image_nkv8ft"
+        let img2Id = "placeholder_ek6jcb"
         img2Array.push(img2Id);
       }
     

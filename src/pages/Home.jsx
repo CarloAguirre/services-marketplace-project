@@ -12,12 +12,15 @@ export const Home = () => {
     let page = 'home';
     const cookies = new Cookies();
 
+    const token = cookies.get("toker")
+    console.log(token)
+
   return (
     
     <div className='principal'>
 
     <header>
-      {<NavModel  pagina={page}/>}
+      {<NavModel pagina={page}/>}
     </header>
 
       
