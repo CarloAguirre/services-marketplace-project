@@ -122,6 +122,13 @@
     
 }
 
+.flex-box__noMargin{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    border: dotted;
+}
+
 .flex-box__row{
     display: flex;
     flex-direction: row;

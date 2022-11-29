@@ -36,17 +36,17 @@ export const NavModel = ({pagina}) => {
                 <div className="navbar-nav me-5">
                     {
                         (fromPage === 'home')
-                                ? <a className="nav-link link-light mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
-                                : <a className="nav-link link-light nav-hover mt-4" aria-current="page" href="/"> <p>Inicio</p></a>
+                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
                     }
                     {
                         (fromPage === 'login')
                                 ? (token)
-                                    ?<a className="nav-link link-light mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
-                                    :<a className="nav-link link-light  mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                    ?<a className="nav-link link-light mt-4__custom pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    :<a className="nav-link link-light  mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                                 : (token)
-                                    ?<a className="nav-link link-light nav-hover mt-4 pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
-                                    :<a className="nav-link link-light nav-hover mt-4" href="/login"> <p>Iniciar Sesión</p></a>
+                                    ?<a className="nav-link link-light nav-hover mt-4__custom pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                     }
                     {
                         (token)

@@ -6,6 +6,8 @@ import { CreateProduct } from '../pages/CreateProduct'
 import { CargarImagenProducto } from '../pages/CargarImagenProducto'
 import { CargarImagenItinerario } from '../pages/CargarImagenItinerario'
 import { TourDetails } from '../pages/TourDetails'
+import { PerfilGuia } from '../pages/PerfilGuia'
+
 
 
 
@@ -23,6 +25,7 @@ export const Router = () => {
           <Route exact path= "/upload-service-image" element={<CargarImagenProducto />} />
           <Route exact path= "/upload-service-imag2" element={<CargarImagenItinerario />} />
           <Route exact path= "/tour-details" element={<TourDetails />} />
+          <Route exact path= "/guide-profile" element={<PerfilGuia />} />
         </Routes>
       </BrowserRouter>
     </>

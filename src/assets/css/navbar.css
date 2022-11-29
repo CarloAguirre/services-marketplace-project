@@ -7,4 +7,8 @@
     opacity: 1;
 }
 
-
+@media (min-width: 991px){
+    .mt-4__custom{
+        margin-top: 1.8rem;
+    }   
+}
