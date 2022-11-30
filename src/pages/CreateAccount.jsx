@@ -41,8 +41,8 @@ export const CreateAccount = () => {
         <header>
           {<NavModel name ={name} />}
         </header>
-
-        <div className='form-wrapper'>
+        <h3 className='text-center mb-5'>Crea tu usuario</h3>
+        <div className='form-wrapper '>
             <form 
             className='login-form'
             onSubmit={onSubmit}
