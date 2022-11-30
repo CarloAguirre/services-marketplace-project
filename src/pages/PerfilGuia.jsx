@@ -61,7 +61,7 @@ export const PerfilGuia = () => {
               <div className='py-2 px-3'>
                 <h2>Información:</h2>
                 <p>Nombre: Fernanda Aguirre Chacón</p>
-                <p>Edad: 26 Años</p>
+                <p>Edad: 27 Años</p>
                 <p>Lugar de nacimiento: Antofagasta</p>
                 <p>Mail: Fernandaaguirreguia@outlook.es</p>
               </div>
@@ -81,6 +81,11 @@ export const PerfilGuia = () => {
 
             <h2 className='mt-4'>Certificaciones</h2>
             <ul>
+              <li>Certificación Turismo Sustentable Sernatur ( La Serena, 2022)</li>
+              <li>Certificación Turismo sustentable Sernatur ( La Serena, 2022)</li>
+              <li>Instructora de ps, rcp y Rea (Aider canada -online-,  2022)</li>
+              <li>Curso de montaña básico (Gastón Oyarzun, Vicuña, 2022)</li>
+              <li>Certificación 'Leave no trace' (viento sur, Vicuña. 2022)</li>
               <li>Curso de ingles online Open English (2014)</li>
               <li>Primeros Auxilios en áreas remotas (WFR) Nols, Chile (2019)</li>
               <li>Certificada en SERNATUR La Serena (2021)</li>

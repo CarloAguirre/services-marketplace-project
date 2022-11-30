@@ -169,6 +169,8 @@ export const CreateProduct = () => {
                     <option>Pueblo</option>
                     <option>Vicuña</option>
                     <option>La Serena</option>
+                    <option>Coquimbo</option>
+                    <option>La Higuera</option>
                     <option>Diaguitas</option>
                     <option>Quebrada de Talca</option>
                     <option>Quebrada El Arrayan</option>
