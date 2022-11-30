@@ -36,28 +36,28 @@ export const PerfilGuia = () => {
               <i class="fa-solid fa-check-double mt-3 me-2 galeria-pc"></i>
               <h1>CONOCIMIENTOS EN:</h1>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 mt-3">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 mt-3 card-profile">
               <i class="fa-sharp fa-solid fa-mountain pb-2 me-2 fa-2x"></i>
               <h3>Alta Montaña</h3>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 card-profile">
               <i class="fa-solid fa-person-hiking pb-2 me-2 fa-2x"></i>
               <h3>Trekking y Running</h3>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 card-profile">
               <i class="fa-solid fa-person-biking pb-2 me-2 fa-2x"></i>
               <h3>Ciclismo</h3>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 card-profile">
               <i class="fa-solid fa-basketball pb-2 me-2 fa-2x"></i>
               <h3>Tenis</h3>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row justify-content-center align-items-center py-3 mb-4 card-profile">
               <i class="fa-solid fa-kit-medical pb-2 me-2 fa-2x"></i>
               <h3>Primero Auxilios</h3>
             </div>
 
-            <div style={{backgroundColor: '#c6582d'}} className="py-3 my-5 flex-box__noMargin">
+            <div style={{backgroundColor: '#c6582d'}} className="py-3 my-5 flex-box__noMargin card-profile">
               <div className='py-2 px-3'>
                 <h2>Información:</h2>
                 <p>Nombre: Fernanda Aguirre Chacón</p>
@@ -93,7 +93,7 @@ export const PerfilGuia = () => {
               <img src="../src/assets/imgs/fer.3.jpg" className='mb-5 img-responsive' alt="imagen numero 1 de la guia Fernanda Aguirre" />         
             </div> 
 
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-5">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-5 card-profile">
               <div className='flex-box__atributos justify-content-center'>
                 <h3 className='ms-3'>Caracter</h3>
                 <p className='ms-3'>Manejo de liderazgo</p>
@@ -102,7 +102,7 @@ export const PerfilGuia = () => {
                 <i class="fa-solid fa-circle-user me-2 less-margin fa-3x"></i>        
               </div>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-3">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-3 card-profile">
               <div className='flex-box__atributos justify-content-center'>
                 <h3 className='ms-3'>GEOREFERENCIACIÓN</h3>
                 <p className='ms-3'>Se usar mapa cartográfico y brújula. Capaz de crear rutas.</p>
@@ -111,7 +111,7 @@ export const PerfilGuia = () => {
                 <i class="fa-solid fa-compass me-2 less-margin fa-3x"></i>        
               </div>
             </div>
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-3">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-3 card-profile">
               <div className='flex-box__atributos justify-content-center'>
                 <h3 className='ms-3'>PERSONALIDAD</h3>
                 <p className='ms-3'>Carismática, apasionada por lograr metas y aprender rápido.</p>

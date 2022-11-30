@@ -30,6 +30,7 @@ export const Router = () => {
           <Route exact path= "/tour-details" element={<TourDetails />} />
           <Route exact path= "/guide-profile" element={<PerfilGuia />} />
           <Route exact path= "/contact" element={<Contact />} />
+          <Route exact path= "/error-404" element={<Error404 />} />
           <Route exact path= "/*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>

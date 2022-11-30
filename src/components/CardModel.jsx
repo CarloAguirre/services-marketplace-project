@@ -44,7 +44,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
   
     return (
         <div className='card-wrapper my-5 mx-2'>
-            <Card style={{ width: '100%', marginBottom: '1.5rem', borderTopLeftRadius: '5%', borderTopRightRadius: '5%', border: 'none'}}>
+            <Card style={{ width: '100%', marginBottom: '1.5rem', borderTopLeftRadius: '5%', borderTopRightRadius: '5%', border: 'none'}} className="card">
                 <AdvancedImage cldImg={img} className='card-image'/>
                 {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}
                 <Card.Body className = 'bg-light card-style'>

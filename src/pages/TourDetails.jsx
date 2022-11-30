@@ -110,7 +110,7 @@ export const TourDetails = () => {
             </Tabs>
             </div>
         </div>
-        : <h1 className='text-center mt-5 pt-5'>ERROR 404 - PAGE NOT FOUND</h1>
+        : window.location.href = '/error-404'
     }
     </>
   )
