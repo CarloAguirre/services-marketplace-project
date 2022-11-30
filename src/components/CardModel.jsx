@@ -53,28 +53,36 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                    {desc}
                 </Card.Text>
                 <div className="text-dark text-opacity-50 fw-semibold d-flex justify-content-between">
-                        <span><i className="fa-solid fa-location-dot me-2"></i>{city}, Chile.</span>
-                        {
-                            (!token)
-                                ?<p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
-                                :<Button variant="primary" 
-                                className='btn btn-light btn-outline-danger p-3 ms-2'
-                                style={{float: "left"}}
-                                onClick ={onClickHandleDelete}
-                                >Eliminar</Button>
-                        }
+                        <span><i className="fa-solid fa-location-dot me-2"></i>{city}, Chile.</span>  
                     
+                {
+                    (token)
+                        ? <p className="text-success me-4 fw-bold fs-5">${price}</p>
+                        : <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
+                        
+                }
                 </div>
+                    
                 <hr />
                 <Button variant="primary" 
                 className='btn btn-light btn-outline-success p-3'
                 style={{float: "left"}}
                 onClick ={onClickHandle}
                 >Reservar</Button>
-                <div className="d-flex justify-content-end">
-                   
-                    <p className="text-success me-4 fw-bold fs-5">${price}</p>
-                </div>
+                {
+                    (token)
+                        ? 
+                        <div className='d-flex justify-content-end'>
+                            <Button variant="primary" 
+                            className='btn btn-light btn-outline-danger p-3 ms-2'
+                            style={{float: "left"}}
+                            onClick ={onClickHandleDelete}
+                            >Eliminar</Button>
+                        </div> 
+                        :<div className="d-flex justify-content-end">              
+                        <p className="text-success me-4 fw-bold fs-5">${price}</p>
+                    </div>
+                }
                 </Card.Body>
             </Card>
         </div>
