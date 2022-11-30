@@ -55,11 +55,12 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 <div className="text-dark text-opacity-50 fw-semibold d-flex justify-content-between">
                         <span><i className="fa-solid fa-location-dot me-2"></i>{city}, Chile.</span>
                     <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
-                    </div>
+                </div>
+                    
                 <hr />
                 <Button variant="primary" 
                 className='btn btn-light btn-outline-success p-3'
-                style={{float: "left"}}
+                style={{float: "left", maxWidth:"20vw"}}
                 onClick ={onClickHandle}
                 >Reservar</Button>
                 {

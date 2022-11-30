@@ -12,9 +12,10 @@
         margin-top: 1.8rem;
     }   
 }
-/* 
-.nav-font p{
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 2px;
-    font-size: larger;
-} */
+@media (max-width: 720px){
+   
+    .logo-custom{
+        max-width: 80%;
+        padding-right: 1rem;
+    }
+}

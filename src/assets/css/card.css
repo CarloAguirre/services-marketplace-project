@@ -61,7 +61,9 @@
     background-color: rgb(247, 240, 231);
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
-    height: 30vh;
+    min-height: 30vh;
+    height: auto;
+    max-height: 100vh;
 }
 
 .card {
