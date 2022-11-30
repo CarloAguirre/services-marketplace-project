@@ -5,10 +5,11 @@ import { NavModel } from '../components/NavModel';
 import '../assets/css/home.css'
 import { CardGrid } from '../components/CardGrid';
 import '../assets/css/card.css'
+import { Reservar } from '../components/Reservar';
 
-export const Home = () => {
+export const Contact = () => {
 
-    let page = 'home';
+    let page = 'contact';
     
   return (
     
@@ -19,10 +20,7 @@ export const Home = () => {
     </header>
 
       <div className='background-body'>
-        {<CardGrid />}
-      <hr className=' container' />
-      <p className='text-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
-      <hr className='mb-0'/>
+        <Reservar />
       </div>     
     </div>
 

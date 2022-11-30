@@ -9,7 +9,7 @@ export const NavUserFunctions = ({name, paginaDesde}) => {
            ? <a className="nav-link link-light mt-4__custom" href="/create-tour"> <p>Crear Tour</p></a>
            : <a className="nav-link link-light nav-hover mt-4__custom" href="/create-tour"> <p>Crear Tour</p></a>
       }
-      <p className="mx-2 mt-4__custom pt-2 fw-bold text-light">Usuario: {name}</p>
+      <p className="mx-2 mt-4__custom pt-2 fw-bold text-light">  Usuario: {name}</p>
     </>
   )
 }

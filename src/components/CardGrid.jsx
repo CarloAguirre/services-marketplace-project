@@ -23,7 +23,7 @@ export const CardGrid = () => {
     
     await productInfoFetch(categoria)
     .then(response =>{
-      // console.log(response)
+      
       setImageIdArray(response);
     })
   };
@@ -41,7 +41,6 @@ export const CardGrid = () => {
   useEffect(() => {
     getImagesID()
   }, [setImageIdArray])
-
 
 
   const cld = new Cloudinary({
@@ -688,7 +687,7 @@ const onClickNextPage = ({target})=>{
 
   if(target.name === 'prev'){
 
-    console.log('prev')
+    // console.log('prev')
     getImagesID();
   }
 };
@@ -697,17 +696,28 @@ const onClickNextPage = ({target})=>{
 <> 
 
           {/* filter */}
-        <div className='filters-wrapper'>
-          <div className="form-floating form-control filter-custom">
-            <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={onCategoryChange}>
-                <option className='text-center' value={''}>Categorias</option>
-                <option value={'6341e2381a3fb2d4e2251ce2'} className='text-center' >Trekking</option>
-                <option value={'63488753cf489b14f0e4c8e1'} className='text-center' >Ciclismo</option>
-                <option className='text-center' >Three</option>
-            </select>
-            <label htmlFor="floatingSelect" className='text-center'>Filtra por Categoria</label>
-          </div>       
-        </div>
+          {
+            (imageIdArray[0][0])
+                    ? <div className='filters-wrapper'>
+                    <div className="form-floating form-control filter-custom filters-font">
+                      <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={onCategoryChange}>
+                          <option className='text-center' value={''}>Todas</option>
+                          <option value={'6341e2381a3fb2d4e2251ce2'} className='text-center' >Trekking</option>
+                          <option value={'63488753cf489b14f0e4c8e1'} className='text-center' >Ciclismo</option>
+                          <option value={'63878778b36e5767673a7278'} className='text-center' >Escalada</option>
+                          <option value={'63878792b36e5767673a727c'} className='text-center' >Astroturismo</option>
+                          <option value={'638787a4b36e5767673a7280'} className='text-center' >Cultura Elquina</option>
+                          <option value={'638787b1b36e5767673a7284'} className='text-center' >Degustaciones</option>
+                          <option value={'638787bdb36e5767673a7288'} className='text-center' >Areas Silvestres Protegidas</option>
+                          <option value={'638787e7b36e5767673a728c'} className='text-center' >Relajo y Desconexión</option>
+                          
+                          {/* <option className='text-center' >Three</option> */}
+                      </select>
+                      <label htmlFor="floatingSelect" className='text-center'>Filtrar por Categoria</label>
+                    </div>       
+                  </div>
+                  : null
+          }
 
       <div className='mx-3'>
       <Container>

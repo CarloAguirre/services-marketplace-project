@@ -17,6 +17,12 @@ export const CreateProduct = () => {
 
     const trekkingId = '6341e2381a3fb2d4e2251ce2'
     const ciclismoId = '63488753cf489b14f0e4c8e1'
+    const Escalada = '63878778b36e5767673a7278'
+    const Astroturismo = '63878792b36e5767673a727c'
+    const CulturaElquina = '638787a4b36e5767673a7280'
+    const Degustaciones = '638787b1b36e5767673a7284'
+    const AreasSilvestresProtegidas = '638787bdb36e5767673a7288'
+    const RelajoYDesconexión = '638787e7b36e5767673a728c'
 
     const [formstate, setFormState] = useState({
         nombre: "",
@@ -140,6 +146,12 @@ export const CreateProduct = () => {
                     <option>Categoria</option>
                     <option value={trekkingId}>Trekking</option>
                     <option value={ciclismoId}>Ciclismo</option>
+                    <option value={Escalada}>Escalada</option>
+                    <option value={Astroturismo}>Astroturismo</option>
+                    <option value={CulturaElquina}>Cultura Elquina</option>
+                    <option value={Degustaciones}>Degustaciones</option>
+                    <option value={AreasSilvestresProtegidas}>Areas silvestres protegidas</option>
+                    <option value={RelajoYDesconexión}>Relajo y Desconexión</option>
                 </select>
                 <label htmlFor="floatingSelect">Selecciona una opción</label>
             </div>
@@ -274,7 +286,7 @@ export const CreateProduct = () => {
             <hr />
         </div>
     </div>
-    <hr />
+    <hr className='create-product__hide-hr' />
 
     <div className='flex-box__row'>
         <div className='flex-box'>

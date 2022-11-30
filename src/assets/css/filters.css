@@ -8,3 +8,13 @@
 .filter-custom {
     max-width: 15rem;
 }
+
+.filters-font select, option, label{
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+    letter-spacing: .5px;
+}
+
+.filters-font label{
+    font-size: x-large;
+}

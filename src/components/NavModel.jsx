@@ -33,19 +33,29 @@ export const NavModel = ({pagina}) => {
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div className="navbar-nav me-5">
+                <div className="navbar-nav me-5 nav-font">
                     {
                         (fromPage === 'home')
                                 ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
                                 : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
                     }
                     {
+                        (fromPage === 'perfilGuia')
+                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/guide-profile"> <p>Guia Lider</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/guide-profile"> <p>Guia Lider</p></a> 
+                    }
+                    {
+                        (fromPage === 'contact')
+                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/contact"> <p>Contacto</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/contact"> <p>Contacto</p></a> 
+                    }
+                    {
                         (fromPage === 'login')
                                 ? (token)
-                                    ?<a className="nav-link link-light mt-4__custom pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    ?<a className="nav-link link-light mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Cerrar Sesión</p></a>
                                     :<a className="nav-link link-light  mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                                 : (token)
-                                    ?<a className="nav-link link-light nav-hover mt-4__custom pe-auto" onClick={onClickHandle}> <p>Cerrar Sesión</p></a>
+                                    ?<a className="nav-link link-light nav-hover mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Cerrar Sesión</p></a>
                                     :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                     }
                     {
