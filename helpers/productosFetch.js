@@ -76,7 +76,6 @@ export const productInfoFetch = async(categoria)=>{
 
     await axios(config)
   .then((response) => {
-
     const {productos} = response.data;
 
     const cld = new Cloudinary({
