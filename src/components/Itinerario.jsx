@@ -64,22 +64,47 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
 
 
             <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
-            <div className='pb-5'>
+            <div className='pb-5 lista-pc'>
                 <ul className="list-group list-group-horizontal justify-content-center mt-5">
                     {
                         (altura === "")
                             ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
-                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
                     }
                     {
                         (dificultad === "")
-                            ?<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
-                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
                     }
                     {
                         (distancia=== "")
-                            ?<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
-                            :<li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                    }
+                    {
+                        (tiempo === "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
+                    }
+                </ul>
+            </div>
+
+            <div className='pb-5 lista-responsive'>
+                <ul className="list-group justify-content-center mt-5">
+                    {
+                        (altura === "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
+                    }
+                    {
+                        (dificultad === "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                    }
+                    {
+                        (distancia=== "")
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
                     }
                     {
                         (tiempo === "")

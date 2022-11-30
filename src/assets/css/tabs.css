@@ -51,4 +51,17 @@ h1, h3{
     font-family: 'Bebas Neue', cursive;
     letter-spacing: .5px;
 }
+@media (max-width: 768px){
+    .lista-pc{
+        display: none;
+    }
+   
+}
+@media (min-width: 768px){
+    .lista-responsive{
+        display: none;
+    }
+   
+}
+
 
