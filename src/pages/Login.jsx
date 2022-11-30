@@ -87,7 +87,7 @@ export const Login = () => {
             </a>
           </div>
       </div>
-      <div id='errorMsg' className='text-center' ></div>
+      <div id='errorMsg' className='text-center mt-3' ></div>
     </div>
   )
 }
