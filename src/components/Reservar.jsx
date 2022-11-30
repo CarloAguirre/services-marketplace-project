@@ -9,8 +9,8 @@ export const Reservar = () => {
     <div className="d-flex">
     <Row className=""> 
         <Col sm={1} lg={3}>
-            <img src="../public/reservar.png" alt="Logo de Cabra del Valle" className="img-position img-pc"/>
-            <img src="../public/contacto.png" alt="Logo de Cabra del Valle" className="img-position img-responsive__contacto"/>
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835616/reservar_qwoyww.png" alt="Logo de Cabra del Valle" className="img-position img-pc"/>
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835646/contacto_w9ht21.png" alt="Logo de Cabra del Valle" className="img-position img-responsive__contacto"/>
         </Col>
         <Col className='contact-col'>
             <div className="btn-custom">

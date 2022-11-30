@@ -53,7 +53,7 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
             <Col sm={12} lg={6}> <AdvancedImage cldImg={myImage} style={{ maxWidth: '90vw' }} className="container"/></Col>
             <Col sm={12} lg={6}>
                 <p style={{ color: 'white', marginTop: '6rem', maxWidth: '90vw', fontWeight: 'bold' }} className="ps-2">"{desc}"</p>
-                <img src="../public/montañas.png"  alt="montañas" style={{ maxWidth: '90vw', marginTop: '4rem' }} className="ps-2" />
+                <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835715/monta%C3%B1as_nl4ebb.png"  alt="montañas" style={{ maxWidth: '90vw', marginTop: '4rem' }} className="ps-2" />
             </Col>
                    
         </Row>

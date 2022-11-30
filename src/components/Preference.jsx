@@ -13,7 +13,7 @@ export const Preference = () => {
             </div>
         </Col>
         <Col sm={12} lg={6}>
-            <img src="../public/logo2.png" alt="Logo de Cabra del Valle" className="mt-5" style={{ maxWidth: '90vw'}}/>
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835805/logo2_fsepes.png" alt="Logo de Cabra del Valle" className="mt-5" style={{ maxWidth: '90vw'}}/>
         </Col>
     </Row>
     </div>
@@ -30,7 +30,7 @@ export const Preference = () => {
         Todos los guías reciben formación en el manejo y ejecución de técnicas que representen un mínimo impacto para la naturaleza, las cuales se buscaran traspasar a los pasajeros en cada guiado.
     </p>
     <div className="d-flex justify-content-center">
-    <img src="../public/montañas.png"  alt="montañas" style={{ maxWidth: '40vw', minWidth: '40%', marginTop: '4rem' }} className="container-fluid mb-5" />
+    <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835715/monta%C3%B1as_nl4ebb.png"  alt="montañas" style={{ maxWidth: '40vw', minWidth: '40%', marginTop: '4rem' }} className="container-fluid mb-5" />
 
     </div>
     </>
