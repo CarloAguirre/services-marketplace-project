@@ -42,8 +42,8 @@ export const CargarImagenProducto = () => {
         <header>
             {<NavModel name={name} pagina={page}/>}
         </header>
-        <h3 className='text-center mt-5'>1 -Carga una imagen para la portada de tu tour</h3>
-        <div className='form-wrapper'>
+        <h3 className='text-center mb-5'>1 -Carga una imagen para la portada de tu tour</h3>
+        <div className='form-wrapper d-flex'>
         <form 
             className='login-form'
             >
