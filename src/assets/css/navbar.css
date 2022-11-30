@@ -15,7 +15,7 @@
 @media (max-width: 720px){
    
     .logo-custom{
-        max-width: 80%;
         padding-right: 1rem;
+        max-width: 60%;
     }
 }

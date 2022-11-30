@@ -46,12 +46,12 @@ export const Login = () => {
       <header>
         {<NavModel name ={name} pagina={page} />}
       </header>
-      <h3 className='text-center mt-5'>Área solo para Administradores</h3>
+      <h3 className='text-center'>Área solo para Administradores</h3>
       <div className='form-wrapper d-flex'>
           <form 
           className='login-form'
           >
-          <div className="mb-3">
+          <div className="mb-5">
               <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
               <input 
               type="email" 

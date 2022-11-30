@@ -53,7 +53,7 @@
 
 @media (max-width: 700px){
     .form-wrapper{
-        max-width: 70vw; 
+        max-width: 90vw; 
     }
    
 }
@@ -61,6 +61,13 @@
 @media (max-width: 930px ){
     .form-wrapper__tour{
         max-width: 60vw;
+    }
+   
+}
+@media (max-width: 540px ){
+    .form-wrapper__tour{
+        max-width: 80vw;
+        border-radius: 5%;
     }
    
 }
