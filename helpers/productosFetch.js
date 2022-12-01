@@ -87,6 +87,7 @@ export const productInfoFetch = async(categoria)=>{
     let i = '';
 
     for(i=0; i<productos.length; i ++){
+      if(productos[i].estado === true){
 
       if(productos[i].img){
         let img = productos[i].img;
@@ -289,6 +290,8 @@ export const productInfoFetch = async(categoria)=>{
       necesario21Array.push(allNecesario21)
 
     }
+
+  }
 
   })
   .catch((error) => {
