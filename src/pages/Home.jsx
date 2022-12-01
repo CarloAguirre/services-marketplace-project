@@ -21,7 +21,7 @@ export const Home = () => {
       <div className='background-body'>
         {<CardGrid />}
       <hr className=' container' />
-      <p className='text-center justify-content-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
+      <p className='text-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
       <hr className='mb-0'/>
       </div>     
     </div>
