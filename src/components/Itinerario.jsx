@@ -62,9 +62,20 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
             <h3 className="mt-5 mx-2 px-5 text-light">Itinerario:</h3>
             <p className="mt-3 px-5 mx-2"  style={{fontWeight: 'bold', fontSize: 'larger'}}>{itinerario}</p>
 
+            <div className='pb-3'>
+                <ul className='list-group list-group-horizontal justify-content-center mt-5'>
+                    {
+                        (requisitos === "")
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> {requisitos} </li>
+                    }
+
+                </ul>
+            </div>
+
 
             <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
-            <div className=' lista-pc'>
+            <div className=' lista-pc mb-5'>
                 <ul className="list-group list-group-horizontal justify-content-center mt-5">
                     {
                         (altura === "")
@@ -88,16 +99,7 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
                     }
                 </ul>
             </div>
-            <div className='pb-5'>
-                <ul className='list-group list-group-horizontal justify-content-center mt-5'>
-                    {
-                        (requisitos === "")
-                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> {requisitos} </li>
-                    }
 
-                </ul>
-            </div>
 
             <div className='pb-5 lista-responsive'>
                 <ul className="list-group justify-content-center mt-5">
