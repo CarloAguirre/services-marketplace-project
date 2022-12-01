@@ -34,11 +34,16 @@
 }
 
 .btn-custom{
-   margin-top: 35vh; 
+   padding-top: 35vh; 
    display: flex;
    flex-direction: column;
    align-items: center;
    min-height: 100vh ;
+ }
+ @media (max-width: 626px){
+   .btn-custom{
+   padding-top: 0.01vh; 
+   }
  }
 
  .contact-col{
