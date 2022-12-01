@@ -68,7 +68,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                     
                 <hr />
                 <Button variant="primary" 
-                className='btn btn-light btn-outline-success p-3'
+                className='btn btn-light btn-outline-success p-3 me-5'
                 style={{float: "left"}}
                 onClick ={onClickHandle}
                 >Ver más</Button>
