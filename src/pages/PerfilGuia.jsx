@@ -81,7 +81,6 @@ export const PerfilGuia = () => {
 
             <h2 className='mt-4'>Certificaciones</h2>
             <ul>
-              <li>Certificación Turismo Sustentable Sernatur ( La Serena, 2022)</li>
               <li>Certificación Turismo sustentable Sernatur ( La Serena, 2022)</li>
               <li>Instructora de ps, rcp y Rea (Aider canada -online-,  2022)</li>
               <li>Curso de montaña básico (Gastón Oyarzun, Vicuña, 2022)</li>
