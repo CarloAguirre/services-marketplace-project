@@ -57,7 +57,10 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                     
                 {
                     (token)
-                        ? <p className="text-success me-4 fw-bold fs-5">${price}</p>
+                        ? <div className='d-flex justify-content-end'>
+                            <p className="text-dark text-opacity-50 me-3 fw-semibold">Valor desde:</p>
+                            <p className="text-success me-2 fw-bold fs-5">${price}</p>
+                        </div> 
                         : <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
                         
                 }
@@ -79,9 +82,10 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                             onClick ={onClickHandleDelete}
                             >Eliminar</Button>
                         </div> 
-                        :<div className="d-flex justify-content-end">              
-                        <p className="text-success me-4 fw-bold fs-5">${price}</p>
-                    </div>
+                        :<div className='d-flex justify-content-end'>
+                            <p className="text-dark text-opacity-50 me-2 fw-semibold">Valor desde:</p>
+                            <p className="text-success me-2 fs-5">${price}</p>
+                        </div> 
                 }
                 </Card.Body>
             </Card>
