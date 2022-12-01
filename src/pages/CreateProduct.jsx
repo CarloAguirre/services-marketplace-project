@@ -199,12 +199,12 @@ export const CreateProduct = () => {
             <hr />
             
             {/* descripcion */}
-            <label htmlFor="floatingTextarea2">Descripcíon (max: 80 caracteres)</label>
+            <label htmlFor="floatingTextarea2">Descripcíon (max: 110 caracteres)</label>
             <div className="form-floating mb-3">
                 <textarea 
                 className="form-control" 
                 id="floatingTextarea2" 
-                maxLength="80"
+                maxLength="110"
                 name='descripcion'
                 value ={descripcion}
                 onChange={onInputchange}

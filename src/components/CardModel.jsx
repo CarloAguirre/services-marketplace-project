@@ -68,7 +68,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 className='btn btn-light btn-outline-success p-3'
                 style={{float: "left"}}
                 onClick ={onClickHandle}
-                >Reservar</Button>
+                >Ver más</Button>
                 {
                     (token)
                         ? 
