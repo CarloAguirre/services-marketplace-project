@@ -11,7 +11,6 @@ export const Reservar = () => {
         <Col sm={1} lg={3} className="col-responsiveSmall__contacto">
             <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835616/reservar_qwoyww.png" alt="Logo de Cabra del Valle" className="img-position img-pc"/>
             <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835646/contacto_w9ht21.png" alt="Logo de Cabra del Valle" className="img-position img-responsive__contacto"/>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669840096/small-responsive_bjcnn1.png" alt="Logo de Cabra del Valle" className="img-position img-responsiveSmall__contacto"/>
         </Col>
         <Col className='contact-col'>
         

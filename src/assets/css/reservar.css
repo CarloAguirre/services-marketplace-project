@@ -125,6 +125,7 @@
       background-image: url('https://res.cloudinary.com/dubwhwd1w/image/upload/v1669840096/small-responsive_bjcnn1.png');
    }
 }
- 
 
- 
+.col-responsiveSmall__contacto img{
+   min-height: 100vh ;
+}
