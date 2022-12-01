@@ -61,9 +61,10 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                         : <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: {user}</p>
                         
                 }
-                </div>
-                    
+                </div>                  
                 <hr />
+
+
                 <Button variant="primary" 
                 className='btn btn-light btn-outline-success p-3'
                 style={{float: "left"}}
@@ -71,17 +72,17 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 >Ver más</Button>
                 {
                     (token)
-                        ? 
-                        <div className='d-flex justify-content-end'>
+                    ? 
+                    <div className='d-flex justify-content-end'>
                             <Button variant="primary" 
-                            className='btn btn-light btn-outline-danger p-3 ms-2'
+                            className='btn btn-light btn-outline-danger p-3'
                             style={{float: "left"}}
                             onClick ={onClickHandleDelete}
                             >Eliminar</Button>
                         </div> 
-                        :<div className="d-flex justify-content-end">              
-                        <p className="text-success me-4 fw-bold fs-5">${price}</p>
-                    </div>
+                    :<div className="d-flex justify-content-end">              
+                            <p className="text-success me-4 fw-bold fs-5">${price}</p>
+                     </div>
                 }
                 </Card.Body>
             </Card>

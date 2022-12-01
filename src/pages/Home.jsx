@@ -18,12 +18,13 @@ export const Home = () => {
       {<NavModel pagina={page}/>}
     </header>
 
-      <div className='background-body'>
+      <div className='background-body__home background-body'>
         {<CardGrid />}
-      <hr className=' container' />
-      <p className='text-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
+      <br />  
+      <br /> 
+      <p className='text-center text-light text-shadow__custom justify-content-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
       <hr className='mb-0'/>
-      </div>     
+      </div>  
     </div>
 
   )

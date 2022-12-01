@@ -705,7 +705,7 @@ const onClickNextPage = ({target})=>{
           {
             (imageIdArray[55][0])
                     ? <div className='filters-wrapper'>
-                    <div className="form-floating form-control filter-custom filters-font">
+                    <div className="form-floating form-control filter-custom filters-font filter-shadow">
                       <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={onCategoryChange}>
                           <option className='text-center' value={''}>Todas</option>
                           <option value={'6341e2381a3fb2d4e2251ce2'} className='text-center' >Trekking</option>
