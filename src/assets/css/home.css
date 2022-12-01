@@ -1,23 +1,10 @@
 
-@media (min-width: 767px){
-   
-    .background-body__home{
-        background-image: url('https://res.cloudinary.com/dubwhwd1w/image/upload/v1669904590/reservar_qwoyww.png');
-        background-size: cover;
-        min-height: 100vh;
-    }
-}
-@media (max-width: 767px ){ 
-    .background-body{
-        background-color: #c84614;
-        min-height: 100vh;
-    }
+.background-body{
+    background-color: #c84614;
+    min-height: 100vh;
 }
 
 
 .container{
    min-height: 4vh;
-}
-.text-shadow__custom{
-text-shadow: -1px -1px 1px #000000, 1px -1px 1px #000000, -1px 1px 1px #000000, 1px 1px 1px #000000;
 }
