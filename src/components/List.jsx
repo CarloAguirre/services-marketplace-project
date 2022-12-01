@@ -12,82 +12,82 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
     <div className='d-flex justify-content-evenly pt-4'>
         <div>
           <Row>
-            <ListGroup variant="flush">
+            <ListGroup variant="flush ">
               <h3 className='mt-3 text-center text-light'>Incluye:</h3>
               {
                 (incluye1 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye1}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye1}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye2 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye2}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye2}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye3 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye3}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye3}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye4 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye4}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye4}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye5 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye5}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye5}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye6 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye6}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye6}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye7 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye7}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye7}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye8 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye8}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye8}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye9 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye9}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye9}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye10 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye10}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye10}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye11 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye11}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye11}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye12 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye12}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye12}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye13 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye13}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye13}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye14 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye14}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye14}</p> </ListGroup.Item>} </Col>
               }
               {
                 (incluye15 === "")
                         ? null
-                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye15}</p> </ListGroup.Item>} </Col>
+                        : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✔ {incluye15}</p> </ListGroup.Item>} </Col>
               }
               
             </ListGroup>
@@ -96,37 +96,113 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
         <div>
           <Row>
           <ListGroup variant="flush">
-          <h3 className='mt-3 text-center text-light'>No Incluye:</h3>
-              {
-                    (noIncluye1 === "")
+          <h3 className='mt-3 text-center text-light'>Necesario traer:</h3>
+
+            {
+                    (necesario1 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye1}</p> </ListGroup.Item>} </Col>
-              }
-              {
-                    (noIncluye2 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario1}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario2 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye2}</p> </ListGroup.Item>} </Col>
-              }
-              {
-                    (noIncluye3 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario2}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario3 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye3}</p> </ListGroup.Item>} </Col>
-              }
-              {
-                    (noIncluye4 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario3}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario4 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye4}</p> </ListGroup.Item>} </Col>
-              }
-              {
-                    (noIncluye5 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario4}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario5 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye5}</p> </ListGroup.Item>} </Col>
-              }
-              {
-                    (noIncluye6 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario5}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario6 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye6}</p> </ListGroup.Item>} </Col>
-              }
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario6}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario7 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario7}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario8 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario8}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario9 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario9}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario10 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario10}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario11 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario11}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario12 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario12}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario13 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario13}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario14 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario14}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario15 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario15}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario16 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario16}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario17 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario17}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario18 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario18}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario19 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario19}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario20 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario20}</p> </ListGroup.Item>} </Col>
+            }
+            {
+                    (necesario21 === "")
+                            ? null
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario1}</p> </ListGroup.Item>} </Col>
+            }
 
             </ListGroup>
           </Row>
@@ -135,113 +211,38 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
     <div className='d-flex justify-content-center'>
         <Row className='pb-5'>
           <ListGroup variant="flush">
-          <h3 className='mt-5 mx-2 text-center text-light'>Importante que cada pasajero lleve:</h3>
+          <h3 className='mt-5 mx-2 text-center text-light'>No incluye:</h3>
             
-            {
-                    (necesario1 === "")
+          {
+                    (noIncluye1 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario1}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario2 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye1}</p> </ListGroup.Item>} </Col>
+              }
+              {
+                    (noIncluye2 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario2}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario3 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye2}</p> </ListGroup.Item>} </Col>
+              }
+              {
+                    (noIncluye3 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario3}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario4 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye3}</p> </ListGroup.Item>} </Col>
+              }
+              {
+                    (noIncluye4 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario4}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario5 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye4}</p> </ListGroup.Item>} </Col>
+              }
+              {
+                    (noIncluye5 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario5}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario6 === "")
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye5}</p> </ListGroup.Item>} </Col>
+              }
+              {
+                    (noIncluye6 === "")
                             ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario6}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario7 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario7}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario8 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario8}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario9 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario9}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario10 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario10}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario11 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario11}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario12 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario12}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario13 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario13}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario14 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario14}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario15 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario15}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario16 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario16}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario17 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario17}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario18 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario18}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario19 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario19}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario20 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario20}</p> </ListGroup.Item>} </Col>
-            }
-            {
-                    (necesario21 === "")
-                            ? null
-                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw'}} className='text-center list-label'> <p   className='list-label'>➕ {necesario1}</p> </ListGroup.Item>} </Col>
-            }
+                            : <Col xs={12} md={12} > {<ListGroup.Item style={{backgroundColor: '#c84614', minWidth: '45vw', margin: '1rem'}} className='text-center list-label'> <p   className='list-label'>✘ {noIncluye6}</p> </ListGroup.Item>} </Col>
+              }
             
             </ListGroup>
           </Row>
