@@ -21,7 +21,7 @@ import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 import '../assets/css/tabs.css'
 
 
-export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo, img2}) => {
+export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo, img2, requisitos}) => {
  
 
     
@@ -64,28 +64,38 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
 
 
             <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
-            <div className='pb-5 lista-pc'>
+            <div className=' lista-pc'>
                 <ul className="list-group list-group-horizontal justify-content-center mt-5">
                     {
                         (altura === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Altura (mt):</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Altura (mt):</strong> {altura} </li>
                     }
                     {
                         (dificultad === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
                     }
                     {
                         (distancia=== "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
                     }
                     {
                         (tiempo === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
                     }
+                </ul>
+            </div>
+            <div className='pb-5'>
+                <ul className='list-group list-group-horizontal justify-content-center mt-5'>
+                    {
+                        (requisitos === "")
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> No aplica </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Requisitos:</strong> {requisitos} </li>
+                    }
+
                 </ul>
             </div>
 

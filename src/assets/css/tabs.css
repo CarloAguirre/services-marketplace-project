@@ -64,4 +64,7 @@ h1, h3{
    
 }
 
-
+.lista-custom:hover{
+    transform: scale(0.99);
+    cursor:default;
+}

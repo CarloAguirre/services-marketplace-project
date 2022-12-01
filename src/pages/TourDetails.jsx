@@ -93,7 +93,7 @@ export const TourDetails = () => {
             >
                 <Tab eventKey="profile" title="Itinerario" className='tab tabs-bg'> 
                 {               
-                (title)?<Itinerario nombre={title} img={img} desc={desc} itinerario={itinerario} altura={altura} distancia={distancia} dificultad={dificultad} tiempo={tiempo} img2={img2}/>
+                (title)?<Itinerario nombre={title} img={img} desc={desc} itinerario={itinerario} altura={altura} distancia={distancia} dificultad={dificultad} tiempo={tiempo} img2={img2} requisitos={requisitos}/>
                 :null
                 }
                     
