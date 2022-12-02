@@ -136,7 +136,30 @@
 }
 
 .image-up{
-    margin-top: -2.3rem;
+    margin-top: -11.6rem;
+}
+@media (max-width: 1497px){
+    .image-up{
+        margin-top: -8.6rem;
+    }
+}
+@media (max-width: 1212px){
+    .image-up{
+        margin-top: -6.6rem;
+    }
+}
+.image-up__more{
+    margin-top: -3.9rem;
+}
+@media (max-width: 1497px){
+    .image-up__more{
+        margin-top: -2.6rem;
+    }
+}
+@media (max-width: 1212px){
+    .image-up__more{
+        margin-top: -1.6rem;
+    }
 }
 
 @media (max-width: 930px){

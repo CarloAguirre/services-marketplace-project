@@ -97,7 +97,7 @@ export const PerfilGuia = () => {
               <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835297/fer.3_c9ezow.jpg" className='mb-5 img-responsive' alt="imagen numero 1 de la guia Fernanda Aguirre" />         
             </div> 
 
-            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-5 card-profile">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-boxp__row align-items-center py-3 mb-5 mt-5 card-profile">
               <div className='flex-box__atributos justify-content-center'>
                 <h3 className='ms-3'>Caracter</h3>
                 <p className='ms-3'>Manejo de liderazgo</p>
@@ -136,11 +136,13 @@ export const PerfilGuia = () => {
         <div className='flex-box__row justify-content-start galeria-responsive mb-4'>
             <i class="fa-solid fa-check-double mt-3 me-2"></i>
             <h2>Participacion en Sernatur</h2>
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '40vw'}} className="ms-3 mt-3 mb-2 filter__shadow" />
         </div>
         <div className='flex-box my-5 container galeria-pc'>
-            <div className='flex-box__row justify-content-start'>
-              <i class="fa-solid fa-check-double mt-3 me-2"></i>
-              <h2>Participación en Sernatur:</h2>
+            <div className='flex-box__row justify-content-start ms-5'>
+              <i class="fa-solid fa-check-double mt-3 pt-5 me-2"></i>
+              <h2 className='pt-5 mt-2'>Participación en Sernatur</h2>
+              <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '20%'}} className="ms-3 filter__shadow" />
             </div>
         </div>
 
@@ -155,11 +157,12 @@ export const PerfilGuia = () => {
             <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835341/fer.4_xqq67w.jpg"  className=' img-responsive' alt="imagen numero 1 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}}/> 
           </div>
           <div className='flex-box__galery'>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835376/fer.5_jddrmc.jpg" className='mb-5 img-responsive' alt="imagen numero 2 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936402/nueva.1_uzuqsa.jpg" className='mb-5 img-responsive' alt="imagen numero 2 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} />
             <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835443/fer.7_efkxie.jpg" className='mb-5 img-responsive' alt="imagen numero 3 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} /> 
           </div>
           <div className='flex-box__galery'>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835413/fer.6_tnzpt2.jpg" className='mb-4 img-responsiv' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936408/nueva.2_jmcgya.jpg" className='mb-4 img-responsive' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936409/nueva.3_vzel7u.jpg" className='mt-4 img-responsive' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{maxWidth: '28vw'}} />
           </div>
         </div>
 
@@ -171,15 +174,16 @@ export const PerfilGuia = () => {
             <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835477/fer.8_lnwjso.jpg" className='mb-5 img-responsive' alt="imagen numero 6 de la guia Fernanda Aguirre" style={{width: '28vw'}} />
           </div>
           <div className='flex-box__galery'>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835535/fer.10_zratrc.jpg" className='mb-5 img-responsive' alt="imagen numero 7 de la guia Fernanda Aguirre" style={{width: '28vw'}} />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835535/fer.10_zratrc.jpg" className='mb-5 img-responsive image-up__more' alt="imagen numero 7 de la guia Fernanda Aguirre" style={{width: '28vw'}} />
           </div>
         </div>
       </div>
 
       <div className='galeria-responsive mt-5'>
+          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936409/nueva.3_vzel7u.jpg"  className='mb-5' alt="imagen numero 1 de la guia Fernanda Aguirre" style={{width: '85vw'}}/> 
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835341/fer.4_xqq67w.jpg"  className='mb-5' alt="imagen numero 1 de la guia Fernanda Aguirre" style={{width: '85vw'}}/> 
-          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835376/fer.5_jddrmc.jpg" className='mb-5' alt="imagen numero 2 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
-          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835413/fer.6_tnzpt2.jpg" className='mb-5' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
+          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936402/nueva.1_uzuqsa.jpg" className='mb-5' alt="imagen numero 2 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
+          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936408/nueva.2_jmcgya.jpg" className='mb-5' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835477/fer.8_lnwjso.jpg" className='mb-5' alt="imagen numero 6 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835535/fer.10_zratrc.jpg" className='mb-5' alt="imagen numero 7 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
       </div>
