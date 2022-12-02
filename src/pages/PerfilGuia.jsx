@@ -136,7 +136,7 @@ export const PerfilGuia = () => {
         <div className='flex-box__row justify-content-start galeria-responsive mb-4'>
             <i class="fa-solid fa-check-double mt-3 me-2"></i>
             <h2>Participacion en Sernatur</h2>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '40vw'}} className="ms-3 mt-3 mb-2 filter__shadow" />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '50vw'}} className="ms-3 mt-3 mb-2 filter__shadow" />
         </div>
         <div className='flex-box my-5 container galeria-pc'>
             <div className='flex-box__row justify-content-start ms-5'>
@@ -186,6 +186,8 @@ export const PerfilGuia = () => {
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669936408/nueva.2_jmcgya.jpg" className='mb-5' alt="imagen numero 4 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835477/fer.8_lnwjso.jpg" className='mb-5' alt="imagen numero 6 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
           <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835535/fer.10_zratrc.jpg" className='mb-5' alt="imagen numero 7 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
+          <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835443/fer.7_efkxie.jpg" className='mb-5' alt="imagen numero 7 de la guia Fernanda Aguirre" style={{width: '85vw'}} />
+
       </div>
 
       <hr className=' container' />
