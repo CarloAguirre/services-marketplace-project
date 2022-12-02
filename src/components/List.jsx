@@ -11,8 +11,8 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
 
     <div className='d-flex justify-content-evenly pt-4'>
         <div>
-          <Row>
-            <ListGroup variant="flush ">
+          <Row className='mx-2'>
+            <ListGroup variant="flush">
               <h3 className='mt-3 text-center text-light'>Incluye:</h3>
               {
                 (incluye1 === "")

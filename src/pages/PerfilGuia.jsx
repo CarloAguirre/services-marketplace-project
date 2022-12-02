@@ -72,11 +72,24 @@ export const PerfilGuia = () => {
             </div> 
 
             <h2>Perfil</h2>
-            <p>Guía diplomada por la Universidad Andres Bello Con 3 años de experiencia.
-            He trabajado con niños y adultos mayores guiándolos en actividades outdoors. A la vez he ido creando nuevas rutas, aprendiendo técnicas y habilidades, para entregar un servicio completo y de calidad.
-            Pertenezco a un club de montaña de la región de Coquimbo, con el cual he subido volcanes hasta los 6.000 metros de altura en la cordillera de Arica.
-            Me apasiona la flora y fauna.
-            Practico activamente mountain bike.</p>
+            <p>Guía diplomada por la Universidad Andrés Bello.
+
+            Con 3 años de experiencia, especializada en turismo aventura.
+            <br />
+            <br />
+            Durante estos 3 años he trabajado con niños, turistas, adultos mayores, siempre guiándolos y entregandoles una experiencia inolvidable.
+            <br />
+            <br />
+            A la vez he ido creando nuevas rutas, aprendiendo técnicas y habilidades, para entregar un servicio completo y de calidad.
+            <br />
+            <br />
+            He recorrido la cordillera de Coquimbo, Arica y Araucanía.
+            <br />
+            <br />
+            Me apasiona la flora, fauna y fotografía. Practico activamente mountain bike y escalada.
+            <br />
+            <br />
+            ¡Quiero acompañarte en tu próxima aventura!</p>
 
 
             <h2 className='mt-4'>Certificaciones</h2>
