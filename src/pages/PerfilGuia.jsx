@@ -148,13 +148,13 @@ export const PerfilGuia = () => {
         <div className='flex-box__row justify-content-start galeria-responsive mb-4'>
             <i class="fa-solid fa-check-double mt-3 me-2"></i>
             <h2>Participacion en Sernatur</h2>
-            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '50vw'}} className="ms-3 mt-3 mb-2 filter__shadow" />
+            <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669946520/sernatur_rkptpb.jpg" alt="logo de sernatur" style={{maxWidth: '50vw'}} className="ms-3 mt-3 mb-2 filter__shadow" />
         </div>
         <div className='flex-box my-5 container galeria-pc'>
             <div className='flex-box__row justify-content-start ms-5'>
               <i class="fa-solid fa-check-double mt-3 pt-5 me-2"></i>
               <h2 className='pt-5 mt-2'>Participación en Sernatur</h2>
-              <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669938583/sernatur_i8tooa.png" alt="logo de sernatur" style={{maxWidth: '20%'}} className="ms-3 filter__shadow" />
+              <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669946520/sernatur_rkptpb.jpg" alt="logo de sernatur" style={{maxWidth: '20%'}} className="ms-3 filter__shadow" />
             </div>
         </div>
 
