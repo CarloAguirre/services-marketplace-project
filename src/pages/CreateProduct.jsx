@@ -105,7 +105,7 @@ export const CreateProduct = () => {
 
   return (
 
-    <div className='pb-5 body-bg__createTour mb-1'>
+    <div className='pb-5 body-bg__createTour'>
 
     
     <header>
@@ -365,7 +365,7 @@ export const CreateProduct = () => {
             <button type="submit" className="btn btn-primary create-account__button btn-lg mt-5">Crear Tour</button>
             </form>
         </div>
-            <div id='errorMsg' className='text-center mb-3' ></div>
+            <div id='errorMsg' className='text-center mt-3' ></div>
 
     </div>
 
