@@ -109,11 +109,10 @@ export const PerfilGuia = () => {
             <div className='flex-box mt-5 galeria-responsive'>
               <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835297/fer.3_c9ezow.jpg" className='mb-5 img-responsive' alt="imagen numero 1 de la guia Fernanda Aguirre" />         
             </div> 
-
-            <div style={{backgroundColor: '#c6582d'}} className="flex-boxp__row align-items-center py-3 mb-5 mt-5 card-profile">
+            <div style={{backgroundColor: '#c6582d'}} className="flex-box__row align-items-center py-3 mb-5 mt-3 card-profile">
               <div className='flex-box__atributos justify-content-center'>
                 <h3 className='ms-3'>Caracter</h3>
-                <p className='ms-3'>Manejo de liderazgo</p>
+                <p className='ms-3'>Manejo de liderazgo.</p>
               </div>
               <div className='flex-box'>
                 <i class="fa-solid fa-circle-user me-2 less-margin fa-3x"></i>        
