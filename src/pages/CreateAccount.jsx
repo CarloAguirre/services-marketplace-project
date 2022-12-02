@@ -37,7 +37,7 @@ export const CreateAccount = () => {
       }
 
     return (
-      <div className='pb-5 body-bg'>
+      <div className='pb-5 body-bg mb-1'>
         <header>
           {<NavModel name ={name} />}
         </header>
@@ -88,7 +88,7 @@ export const CreateAccount = () => {
             <button type="submit" className="btn btn-primary create-account__button">Crear Cuenta</button>
             </form>
         </div>
-            <div id='errorMsg' className='text-center' ></div>
+            <div id='errorMsg' className='text-center mb-3' ></div>
         </div>
       )
     }

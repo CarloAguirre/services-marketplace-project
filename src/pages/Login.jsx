@@ -42,7 +42,7 @@ export const Login = () => {
             
 
   return (
-    <div className='pb-5 body-bg '>
+    <div className='pb-5 body-bg mb-1'>
       <header>
         {<NavModel name ={name} pagina={page} />}
       </header>
@@ -87,7 +87,7 @@ export const Login = () => {
             </a>
           </div>
       </div>
-      <div id='errorMsg' className='text-center mt-3' ></div>
+      <div id='errorMsg' className='text-center mb-3' ></div>
     </div>
   )
 }
