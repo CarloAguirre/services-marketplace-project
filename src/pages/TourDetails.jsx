@@ -79,7 +79,7 @@ export const TourDetails = () => {
     <>
     {
         (id)?
-        <div id='container' >
+        <div id='container'>
     
         <header>
             {<NavModel name={name} />}

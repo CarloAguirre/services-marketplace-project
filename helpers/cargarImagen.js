@@ -38,9 +38,10 @@ export const cargarImagen = async(archivo, id)=>{
    };
     
 
-    await fetch(`https://server-modelo.herokuapp.com/uploads/productos/${id}`, requestOptions)
+    await fetch(`https://server-modelo.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
     .then(response => {
         response.text()
+        console.log(response)
         cookies.set('id', idtour);
         cookies.set('nombre', nombreUser);
         // alert(`${nombreUser} haz crado correctamente tu tour`)
