@@ -35,6 +35,7 @@ export const NavModel = ({pagina}) => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div className="navbar-nav me-5 nav-font">
+            
                     {
                         (fromPage === 'home')
                                 ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
@@ -60,6 +61,11 @@ export const NavModel = ({pagina}) => {
                                     :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                     }
                     {
+                        (token)
+                        ? <NavUserFunctions name={name} paginaDesde={fromPage}/> 
+                        : null                          
+                    }
+                    {
                         (fromPage === 'createAccount')
                                 ? (token)
                                     ? null
@@ -67,11 +73,6 @@ export const NavModel = ({pagina}) => {
                                 : (token)
                                     ? null 
                                     : <a className="nav-link link-light nav-hover mt-4__custom" href="/registration-241500-03"> <p>Crear Cuenta</p></a>
-                    }
-                    {
-                        (token)
-                            ? <NavUserFunctions name={name} paginaDesde={fromPage}/> 
-                            : null                          
                     }
                     
                 </div>
