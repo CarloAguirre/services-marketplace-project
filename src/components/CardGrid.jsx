@@ -34,7 +34,7 @@ export const CardGrid = () => {
     await productInfoFetch(value)
     .then(response =>{ 
 
-      // console.log(response[0].length)
+      console.log(response)
       if(response[0].length === 0){
         alert('Aun no existen productos con esta categoria');
       }else{

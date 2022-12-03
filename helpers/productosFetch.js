@@ -311,7 +311,7 @@ export const productInfoFetch = async(categoria)=>{
     
   let config = {
     method: 'get',
-    url: 'https://restserver-crud-avanzado.herokuapp.com/api/productos?limite=10000',
+    url: 'https://server-modelo.herokuapp.com/api/productos?limite=10000',
     headers: { },
     data : data
   };
