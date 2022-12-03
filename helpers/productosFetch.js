@@ -69,7 +69,7 @@ export const productInfoFetch = async(categoria)=>{
     
     let config = {
       method: 'get',
-      url: `https://restserver-crud-avanzado.herokuapp.com/api/productos/categoria/${categoria}`,
+      url: `https://server-modelo.herokuapp.com/api/productos/categoria/${categoria}`,
       headers: { },
       data : data
     };

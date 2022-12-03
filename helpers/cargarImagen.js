@@ -38,7 +38,7 @@ export const cargarImagen = async(archivo, id)=>{
    };
     
 
-    await fetch(`https://restserver-crud-avanzado.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
+    await fetch(`https://server-modelo.herokuapp.com/uploads/productos/${id}`, requestOptions)
     .then(response => {
         response.text()
         cookies.set('id', idtour);

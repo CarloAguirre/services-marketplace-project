@@ -8,7 +8,7 @@ import { createAccountFetch } from '../../helpers/createAccountFetch'
 
 export const CreateAccount = () => {
 
-    const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/usuarios/`
+    const baseUrl = `https://server-modelo.herokuapp.com/api/usuarios/`
 
     const cookies = new Cookies();
 

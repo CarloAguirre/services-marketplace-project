@@ -5,7 +5,7 @@ export const deleteFetch = async(id, token)=>{
 
     let config = {
     method: 'delete',
-    url: `https://restserver-crud-avanzado.herokuapp.com/api/productos/${id}`,
+    url: `https://server-modelo.herokuapp.com/api/productos/${id}`,
     headers: { 
         'Authorization': `${token}`
     }

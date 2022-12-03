@@ -3,7 +3,7 @@ import Cookies from 'universal-cookie'
 
 export const loginFetch = async(password, email)=>{
 
-    const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/auth/login`
+    const baseUrl = `https://server-modelo.herokuapp.com/api/auth/login`
 
     const cookies = new Cookies();
 

@@ -11,7 +11,7 @@ export const Login = () => {
 
     const page = 'login'
 
-    const baseUrl = `https://restserver-crud-avanzado.herokuapp.com/api/auth/login`
+    const baseUrl = `https://server-modelo.herokuapp.com/api/auth/login`
 
     const cookies = new Cookies();
 

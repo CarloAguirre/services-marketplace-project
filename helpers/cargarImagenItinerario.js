@@ -38,7 +38,7 @@ export const cargarImagenItinerario = async(archivo, id)=>{
    };
     
 
-    await fetch(`https://restserver-crud-avanzado.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
+    await fetch(`https://server-modelo.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
     .then(response => {
         response.text()
         alert(`${nombreUser} haz crado correctamente tu tour`)

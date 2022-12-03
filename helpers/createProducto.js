@@ -62,7 +62,7 @@ export const createProducto = async(nombre, categoria, precio, descripcion, ciud
 
     var config = {
         method: 'post',
-        url: 'https://restserver-crud-avanzado.herokuapp.com/api/productos/',
+        url: 'https://server-modelo.herokuapp.com/api/productos/',
         headers: { 
             'Authorization': token, 
             'Content-Type': 'application/json'
