@@ -6,6 +6,7 @@ import '../assets/css/home.css'
 import { CardGrid } from '../components/CardGrid';
 import '../assets/css/card.css'
 import '../assets/css/login.css'
+import { Footer } from '../components/Footer';
 
 export const PerfilGuia = () => {
 
@@ -202,9 +203,7 @@ export const PerfilGuia = () => {
 
       </div>
 
-      <hr className=' container' />
-      <p className='text-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
-      <hr className='mb-0'/>
+      {<Footer />}
       </div>     
     </div>
 

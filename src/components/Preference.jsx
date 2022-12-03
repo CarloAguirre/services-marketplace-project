@@ -1,5 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Footer } from './Footer';
 
 
 export const Preference = () => {
@@ -33,6 +34,7 @@ export const Preference = () => {
     <img src="https://res.cloudinary.com/dubwhwd1w/image/upload/v1669835715/monta%C3%B1as_nl4ebb.png"  alt="montañas" style={{ maxWidth: '40vw', minWidth: '40%', marginTop: '4rem' }} className="container-fluid mb-5" />
 
     </div>
+    {<Footer />}
     </>
 
   )

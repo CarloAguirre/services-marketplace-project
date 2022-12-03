@@ -19,6 +19,7 @@ import {Position} from "@cloudinary/url-gen/qualifiers/position";
 import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
 
 import '../assets/css/tabs.css'
+import { Footer } from './Footer';
 
 
 export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, dificultad, tiempo, img2, requisitos}) => {
@@ -129,6 +130,7 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
         <Row className="d-flex justify-content-center">
         <Col sm={12} lg={8} xl={6}><AdvancedImage cldImg={myImage2}  className="container d-flex pb-5 justify-content-center image2"/></Col>
         </Row>
+        {<Footer />}
     </div>
 
   )
