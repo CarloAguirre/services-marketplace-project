@@ -8,7 +8,7 @@ import { createAccountFetch } from '../../helpers/createAccountFetch'
 
 export const CreateAccount = () => {
 
-    const baseUrl = `https://server-modelo.herokuapp.com/api/usuarios/`
+    let page = 'createAccount'; 
 
     const cookies = new Cookies();
 
@@ -39,7 +39,7 @@ export const CreateAccount = () => {
     return (
       <div className='pb-5 body-bg'>
         <header>
-          {<NavModel name ={name} />}
+          {<NavModel name ={name} pagina={page}/>}
         </header>
         <h3 className='text-center mb-5'>Crea tu usuario</h3>
         <div className='form-wrapper '>

@@ -60,6 +60,15 @@ export const NavModel = ({pagina}) => {
                                     :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
                     }
                     {
+                        (fromPage === 'createAccount')
+                                ? (token)
+                                    ? null
+                                    : <a className="nav-link link-light  mt-4__custom" href="/registration-241500-03"> <p>Crear Cuenta</p></a>
+                                : (token)
+                                    ? null 
+                                    : <a className="nav-link link-light nav-hover mt-4__custom" href="/registration-241500-03"> <p>Crear Cuenta</p></a>
+                    }
+                    {
                         (token)
                             ? <NavUserFunctions name={name} paginaDesde={fromPage}/> 
                             : null                          

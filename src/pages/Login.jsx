@@ -82,8 +82,8 @@ export const Login = () => {
           <hr />
           </form>
           <div>
-            <a href="/create-account">
-            {/* <button className="btn btn-success mb-4">Crear Cuenta</button> */}
+            <a href="/registration-241500-03">
+            <button className="btn btn-success mb-4">Crear Cuenta</button>
             </a>
           </div>
       </div>
