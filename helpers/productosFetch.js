@@ -409,7 +409,7 @@ export const productInfoFetch = async(categoria)=>{
       incluye1Array.push(allIncluye1)
 
       let allIncluye2 = productos[i].incluye2
-      incluye2Array.push(allIncluye1)
+      incluye2Array.push(allIncluye2)
 
       let allIncluye3 = productos[i].incluye3
       incluye3Array.push(allIncluye3)
