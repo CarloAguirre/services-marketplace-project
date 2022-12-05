@@ -44,8 +44,8 @@
 p, li, .list-label{
     font-family: 'Hind Guntur', sans-serif;
     font-weight: bolder;
+    transition: .2s;
 }
-
 
 h1, h3{
     font-family: 'Bebas Neue', cursive;
@@ -67,4 +67,14 @@ h1, h3{
 .lista-custom:hover{
     transform: scale(0.99);
     cursor:default;
+}
+
+@media (max-width: 933px ){
+   
+    .list-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
