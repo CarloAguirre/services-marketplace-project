@@ -49,7 +49,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}
                 <Card.Body className = 'bg-light card-style'>
                 <Card.Title>{title}</Card.Title>
-                <Card.Text className='text-dark text-opacity-50 fw-semibold' style={{height: '72px'}}>
+                <Card.Text className='text-dark text-opacity-50 fw-semibold' style={{height: '78px'}}>
                    {desc}
                 </Card.Text>
                 <div className="text-dark text-opacity-50 fw-semibold d-flex justify-content-between">
