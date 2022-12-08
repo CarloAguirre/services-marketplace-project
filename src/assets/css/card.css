@@ -62,5 +62,15 @@
   box-shadow: -1px 2px 23px 0px rgba(0,0,0,0.75);
   transform: scale(1.01);
 }
+@media (min-width:125%){
+  .card-style{
 
+    min-height: 160vh;
+    max-height: 160vh;
+  }
+  /* .card-image{
+
+  } */
+
+}
 
