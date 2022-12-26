@@ -1,11 +1,12 @@
 
 import axios from "axios";
+import { serverPath } from "./serverPath";
 
 export const deleteFetch = async(id, token)=>{
 
     let config = {
     method: 'delete',
-    url: `https://server-modelo.herokuapp.com/api/productos/${id}`,
+    url: serverPath + `api/productos/${id}`,
     headers: { 
         'Authorization': `${token}`
     }

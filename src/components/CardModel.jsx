@@ -73,7 +73,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 className='btn btn-light btn-outline-success p-3 me-5'
                 style={{float: "left"}}
                 onClick ={onClickHandle}
-                >Ver más</Button>
+                >View More</Button>
                 {
                     (token && name === user)
                         ? 
@@ -82,7 +82,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                             className='btn btn-light btn-outline-danger p-3 ms-2'
                             style={{float: "left"}}
                             onClick ={onClickHandleDelete}
-                            >Eliminar</Button>
+                            >Delete</Button>
                         </div> 
                         :<div className='d-flex justify-content-end'>
                             <p className="text-dark text-opacity-50 me-2 fw-semibold">Per person:</p>

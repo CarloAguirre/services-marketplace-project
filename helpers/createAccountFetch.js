@@ -1,9 +1,10 @@
 import axios from 'axios'
 import Cookies from 'universal-cookie'
+import { serverPath } from './serverPath';
 
 export const createAccountFetch = async(name, password, email)=>{
 
-    const baseUrl = `https://server-modelo.herokuapp.com/api/usuarios/`
+    const baseUrl = serverPath + `api/usuarios/`
 
     const cookies = new Cookies();
 

@@ -1,9 +1,10 @@
 import axios from 'axios'
 import Cookies from 'universal-cookie'
+import { serverPath } from './serverPath';
 
 export const loginFetch = async(password, email)=>{
 
-    const baseUrl = `https://server-modelo.herokuapp.com/api/auth/login`
+    const baseUrl = serverPath + `api/auth/login`
 
     const cookies = new Cookies();
 
@@ -35,7 +36,7 @@ export const loginFetch = async(password, email)=>{
           
       })
       .catch(({response}) =>{
-        // console.log(response.data.errors[0])
+        // console.log(response.data.errors[0].msg)
         if(response.data.errors){
           const{msg} = response.data.errors[0]
   

@@ -91,20 +91,20 @@ export const TourDetails = () => {
             className="mb-3"
             fill
             >
-                <Tab eventKey="profile" title="Itinerario" className='tab tabs-bg'> 
+                <Tab eventKey="profile" title="Itinerary" className='tab tabs-bg'> 
                 {               
                 (title)?<Itinerario nombre={title} img={img} desc={desc} itinerario={itinerario} altura={altura} distancia={distancia} dificultad={dificultad} tiempo={tiempo} img2={img2} requisitos={requisitos}/>
                 :null
                 }
                     
                 </Tab>
-                <Tab eventKey="home" title="Requerimientos" className='tab tabs-bg'>
+                <Tab eventKey="home" title="Requirements" className='tab tabs-bg'>
                  <List incluye1={incluye1} incluye2={incluye2} incluye3={incluye3} incluye4={incluye4} incluye5={incluye5} incluye6={incluye6} incluye7={incluye7} incluye8={incluye8} incluye9={incluye9} incluye10={incluye10} incluye11={incluye11} incluye12={incluye12} incluye13={incluye13} incluye14={incluye14} incluye15={incluye15} noIncluye1={noIncluye1} noIncluye2={noIncluye2} noIncluye3={noIncluye3} noIncluye4={noIncluye4} noIncluye5={noIncluye5} noIncluye6={noIncluye6} necesario1={necesario1} necesario2={necesario2} necesario3={necesario3} necesario4={necesario4} necesario5={necesario5} necesario6={necesario6} necesario7={necesario7} necesario8={necesario8} necesario9={necesario9}necesario10={necesario10} necesario11={necesario11} necesario12={necesario12} necesario13={necesario13} necesario14={necesario14} necesario15={necesario15} necesario16={necesario16} necesario17={necesario17} necesario18={necesario18} necesario19={necesario19} necesario20={necesario20} necesario21={necesario21}  /> 
                 </Tab>
-                <Tab eventKey="longer-tab" title="Garantia" className='tab tabs-bg'>
+                <Tab eventKey="longer-tab" title="Warranty" className='tab tabs-bg'>
                     <Preference />            
                 </Tab>
-                <Tab eventKey="contact" title="Reservar" className='tab tabs-bg'>
+                <Tab eventKey="contact" title="Reserve" className='tab tabs-bg'>
                     <Reservar />
                 </Tab>
             </Tabs>

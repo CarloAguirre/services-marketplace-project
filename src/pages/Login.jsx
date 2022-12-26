@@ -42,10 +42,6 @@ export const Login = () => {
        
 
   return (
-    <>
-    <head>
-    
-    </head>
     <div className='pb-5 body-bg '>
       <header>
         {<NavModel name ={name} pagina={page} />}
@@ -91,10 +87,8 @@ export const Login = () => {
             </a>
           </div>
       </div>
+      <div id='errorMsg' className='text-center mt-2' ></div>
     </div>
-
-
-    </>
   )
 }
 

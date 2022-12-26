@@ -1,5 +1,6 @@
 import axios from "axios";
 import {Cloudinary} from "@cloudinary/url-gen";
+import { serverPath } from "./serverPath";
 
 
 
@@ -69,7 +70,7 @@ export const productInfoFetch = async(categoria)=>{
     
     let config = {
       method: 'get',
-      url: `https://server-modelo.herokuapp.com/api/productos/categoria/${categoria}`,
+      url: serverPath + `api/productos/categoria/${categoria}`,
       headers: { },
       data : data
     };
@@ -311,7 +312,7 @@ export const productInfoFetch = async(categoria)=>{
     
   let config = {
     method: 'get',
-    url: 'https://server-modelo.herokuapp.com/api/productos?limite=10000',
+    url: serverPath + `api/productos?limite=10000`,
     headers: { },
     data : data
   };

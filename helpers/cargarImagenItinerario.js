@@ -1,5 +1,6 @@
 import FormData from 'form-data'
 import Cookies from 'universal-cookie'
+import { serverPath } from './serverPath';
 
 export const cargarImagenItinerario = async(archivo, id)=>{
 
@@ -38,7 +39,7 @@ export const cargarImagenItinerario = async(archivo, id)=>{
    };
     
 
-    await fetch(`https://server-modelo.herokuapp.com/api/uploads/productos/${id}`, requestOptions)
+    await fetch(serverPath + `api/uploads/productos/${id}`, requestOptions)
     .then(response => {
         response.text()
         alert(`${nombreUser} haz crado correctamente tu tour`)

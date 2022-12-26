@@ -15,14 +15,14 @@ export const Reservar = () => {
         <Col className='contact-col'>
         
             <div className="btn-custom">
-                <h1 className="text-light text-light__custom">Contactate con nosotros</h1>
+                <h1 className="text-light text-light__custom">Contact us</h1>
                 <div className='d-flex mt-4'>
-                  <a href="https://wa.me/+56997135239" target='_blank'><button type="button" className="btn btn-success btn-lg ">Whatsapp</button></a>                
+                  <a href="https://wa.me/+99999999" target='_blank'><button type="button" className="btn btn-success btn-lg ">Whatsapp</button></a>                
                   <div className='ms-3'>
-                   <a href="mailto:info@cabradelvalle.cl"><button type="button" className="btn btn-primary btn-lg ">E-mail</button></a>
+                   <a href="mailto:reservations@yuremail"><button type="button" className="btn btn-primary btn-lg ">E-mail</button></a>
                   </div>
                 </div>
-                <p className='mt-5 text-light'>Dirección: O'higgins #215 Vicuña, Chile.</p>
+                <p className='mt-5 text-light'>Address: Street #215 Las Vegas, United States.</p>
             </div>
       
         </Col>

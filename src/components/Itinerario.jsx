@@ -38,32 +38,32 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
         </Row>
         </div>
         <div className='container'>
-            <h3 className="mt-5 mx-2 px-5 text-light">Itinerario:</h3>
+            <h3 className="mt-5 mx-2 px-5 text-light">Itinerary:</h3>
             <p className="mt-3 px-5 mx-2"  style={{fontWeight: 'bold', fontSize: 'larger'}}>{itinerario}</p>
 
 
-            <h3 className="mt-5 mx-2 px-5 text-light text-center">Especificaciones:</h3>
+            <h3 className="mt-5 mx-2 px-5 text-light text-center">Specs:</h3>
             <div className=' lista-pc mb-5'>
                 <ul className="list-group list-group-horizontal justify-content-center mt-5">
                     {
                         (altura === "")
-                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Altura (mt):</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Altura (mt):</strong> {altura} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Height (mt):</strong> Not applicable </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Height (mt):</strong> {altura} </li>
                     }
                     {
                         (dificultad === "")
-                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Difficulty:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Difficulty:</strong> {dificultad} </li>
                     }
                     {
                         (distancia=== "")
-                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distance:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Distance:</strong> {distancia} </li>
                     }
                     {
                         (tiempo === "")
-                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
+                            ? <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Time:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center lista-custom" style={{ minWidth: '20%' }}><strong>Time:</strong> {tiempo} </li>
                     }
                 </ul>
             </div>
@@ -73,23 +73,23 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
                 <ul className="list-group justify-content-center mt-5">
                     {
                         (altura === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Altura:</strong> {altura} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Height:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Height:</strong> {altura} </li>
                     }
                     {
                         (dificultad === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Dificultad:</strong> {dificultad} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Difficulty:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Difficulty:</strong> {dificultad} </li>
                     }
                     {
                         (distancia=== "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distancia:</strong> {distancia} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distance:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Distance:</strong> {distancia} </li>
                     }
                     {
                         (tiempo === "")
-                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> No aplica </li>
-                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Tiempo:</strong> {tiempo} </li>
+                            ? <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Time:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center" style={{ minWidth: '20%' }}><strong>Time:</strong> {tiempo} </li>
                     }
                 </ul>
             </div>
@@ -101,8 +101,8 @@ export const Itinerario = ({nombre, img, desc, itinerario, altura, distancia, di
                 <ul className='list-group list-group-horizontal justify-content-center mt-5'>
                     {
                         (requisitos === "")
-                            ? <li className="list-group-item text-center lista-custom text-danger" style={{ minWidth: '20%', fontSize: 'larger' }}><strong>Requisitos:</strong> No aplica </li>
-                            : <li className="list-group-item text-center lista-custom text-danger" style={{ minWidth: '20%',fontSize: 'larger' }}><strong>Requisitos:</strong> {requisitos} </li>
+                            ? <li className="list-group-item text-center lista-custom text-danger" style={{ minWidth: '20%', fontSize: 'larger' }}><strong>Requirements:</strong> Not applicable </li>
+                            : <li className="list-group-item text-center lista-custom text-danger" style={{ minWidth: '20%',fontSize: 'larger' }}><strong>Requirements:</strong> {requisitos} </li>
                     }
 
                 </ul>

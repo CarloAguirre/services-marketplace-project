@@ -14,7 +14,7 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
         <div>
           <Row >
             <ListGroup variant="flush" className='ms-1'>
-              <h3 className='mt-3 text-center text-light'>Incluye:</h3>
+              <h3 className='mt-3 text-center text-light'>Includes:</h3>
               {
                 (incluye1 === "")
                         ? null
@@ -97,7 +97,7 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
         <div>
           <Row>
           <ListGroup variant="flush">
-          <h3 className='mt-3 text-center text-light'>Necesario traer:</h3>
+          <h3 className='mt-3 text-center text-light'>Necessary to bring:</h3>
 
             {
                     (necesario1 === "")
@@ -212,7 +212,7 @@ export const List = ({incluye1, incluye2, incluye3, incluye4, incluye5, incluye6
     <div className='d-flex justify-content-center'>
         <Row className='pb-5'>
           <ListGroup variant="flush">
-          <h3 className='mt-5 mx-2 text-center text-light'>No incluye:</h3>
+          <h3 className='mt-5 mx-2 text-center text-light'>Does not include:</h3>
             
           {
                     (noIncluye1 === "")
