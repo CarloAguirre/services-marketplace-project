@@ -38,27 +38,17 @@ export const NavModel = ({pagina}) => {
             
                     {
                         (fromPage === 'home')
-                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
-                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/"> <p>Inicio</p></a>
-                    }
-                    {
-                        (fromPage === 'perfilGuia')
-                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/guide-profile"> <p>Guia Lider</p></a>
-                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/guide-profile"> <p>Guia Lider</p></a> 
-                    }
-                    {
-                        (fromPage === 'contact')
-                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/contact"> <p>Contacto</p></a>
-                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/contact"> <p>Contacto</p></a> 
+                                ? <a className="nav-link link-light mt-4__custom" aria-current="page" href="/"> <p>Home</p></a>
+                                : <a className="nav-link link-light nav-hover mt-4__custom" aria-current="page" href="/"> <p>Home</p></a>
                     }
                     {
                         (fromPage === 'login')
                                 ? (token)
-                                    ?<a className="nav-link link-light mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Cerrar Sesión</p></a>
-                                    :<a className="nav-link link-light  mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
+                                    ?<a className="nav-link link-light mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Logout</p></a>
+                                    :<a className="nav-link link-light  mt-4__custom" href="/login"> <p>Login</p></a>
                                 : (token)
-                                    ?<a className="nav-link link-light nav-hover mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Cerrar Sesión</p></a>
-                                    :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Iniciar Sesión</p></a>
+                                    ?<a className="nav-link link-light nav-hover mt-4__custom" onClick={onClickHandle} style={{cursor: 'pointer'}}> <p>Logout</p></a>
+                                    :<a className="nav-link link-light nav-hover mt-4__custom" href="/login"> <p>Login</p></a>
                     }
                     {
                         (token)
@@ -69,10 +59,10 @@ export const NavModel = ({pagina}) => {
                         (fromPage === 'createAccount')
                                 ? (token)
                                     ? null
-                                    : <a className="nav-link link-light  mt-4__custom" href="/registration-241500-03"> <p>Crear Cuenta</p></a>
+                                    : <a className="nav-link link-light  mt-4__custom" href="/registration"> <p>Create Account</p></a>
                                 : (token)
                                     ? null 
-                                    : <a className="nav-link link-light nav-hover mt-4__custom" href="/registration-241500-03"> <p>Crear Cuenta</p></a>
+                                    : <a className="nav-link link-light nav-hover mt-4__custom" href="/registration"> <p>Create Account</p></a>
                     }
                     
                 </div>

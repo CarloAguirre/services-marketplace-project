@@ -39,9 +39,13 @@ export const Login = () => {
 
             }
             
-            
+       
 
   return (
+    <>
+    <head>
+    
+    </head>
     <div className='pb-5 body-bg '>
       <header>
         {<NavModel name ={name} pagina={page} />}
@@ -82,12 +86,15 @@ export const Login = () => {
           <hr />
           </form>
           <div>
-            <a href="/registration-241500-03">
+            <a href="/registration">
             <button className="btn btn-success mb-4">Crear Cuenta</button>
             </a>
           </div>
       </div>
-      <div id='errorMsg' className='text-center mt-2' ></div>
     </div>
+
+
+    </>
   )
 }
+

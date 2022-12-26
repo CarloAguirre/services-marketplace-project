@@ -36,7 +36,7 @@ export const CardGrid = () => {
 
       console.log(response)
       if(response[0].length === 0){
-        alert('Aun no existen productos con esta categoria');
+        alert('There are no products with this category yet');
       }else{
         setImageIdArray(response);
       }
@@ -707,19 +707,19 @@ const onClickNextPage = ({target})=>{
                     ? <div className='filters-wrapper'>
                     <div className="form-floating form-control filter-custom filters-font filter__shadow ">
                       <select className="form-select" id="floatingSelect" aria-label="Floating label select example" onChange={onCategoryChange}>
-                          <option className='text-center' value={''}>Todas</option>
+                          <option className='text-center' value={''}>All</option>
                           <option value={'6341e2381a3fb2d4e2251ce2'} className='text-center' >Trekking</option>
-                          <option value={'63488753cf489b14f0e4c8e1'} className='text-center' >Ciclismo</option>
-                          <option value={'63878778b36e5767673a7278'} className='text-center' >Escalada</option>
-                          <option value={'63878792b36e5767673a727c'} className='text-center' >Astroturismo</option>
-                          <option value={'638787a4b36e5767673a7280'} className='text-center' >Cultura Elquina</option>
-                          <option value={'638787b1b36e5767673a7284'} className='text-center' >Degustaciones</option>
-                          <option value={'638787bdb36e5767673a7288'} className='text-center' >Areas Silvestres Protegidas</option>
-                          <option value={'638787e7b36e5767673a728c'} className='text-center' >Relajo y Desconexión</option>
+                          <option value={'63488753cf489b14f0e4c8e1'} className='text-center' >Cycling</option>
+                          <option value={'63878778b36e5767673a7278'} className='text-center' >Climbing</option>
+                          <option value={'63878792b36e5767673a727c'} className='text-center' >Astrotourism</option>
+                          <option value={'638787a4b36e5767673a7280'} className='text-center' >Culture</option>
+                          <option value={'638787b1b36e5767673a7284'} className='text-center' >Tastings</option>
+                          <option value={'638787bdb36e5767673a7288'} className='text-center' >Protected Wilderness Areas</option>
+                          <option value={'638787e7b36e5767673a728c'} className='text-center' >Relaxation and Disconnection</option>
                           
                           {/* <option className='text-center' >Three</option> */}
                       </select>
-                      <label htmlFor="floatingSelect" className='text-center'>Filtrar por Categoria</label>
+                      <label htmlFor="floatingSelect" className='text-center'>Filter by Category</label>
                     </div>       
                   </div>
                   : null

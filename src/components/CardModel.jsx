@@ -14,6 +14,8 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
     
     const cookies = new Cookies;
 
+    const name = cookies.get('name')
+
     const token = cookies.get('token')
 
 
@@ -23,7 +25,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
 
     const onClickHandleDelete = async()=>{
 
-        var opcion = confirm(`¿Estas segura que deseas eliminar el tour ${title}?`);
+        var opcion = confirm(`Are you sure you want to delete the service ${title}?`);
         if (opcion == true) {
             const cookies = new Cookies;
         
@@ -44,24 +46,24 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
   
     return (
         <div className='card-wrapper my-5 mx-2'>
-            <Card style={{ width: '100%', marginBottom: '1.5rem', borderTopLeftRadius: '5%', borderTopRightRadius: '5%', border: 'none'}} className="card">
-                <AdvancedImage cldImg={img} className='card-image'/>
+            <Card style={{ width: '100%', borderTopLeftRadius: '5%', marginBottom: '1.5rem', borderTopRightRadius: '5%', border: 'none', borderBottomLeftRadius: '5%', borderBottomRightRadius: '5%'}} className="card">
+                <AdvancedImage cldImg={img} className='card-image' alt="Imagen de servicio"/>
                 {/* <Card.Img variant="top" src={ path } className = 'card-image'/> */}
-                <Card.Body className = 'bg-light card-style'>
+                <Card.Body className = 'bg-light border-bottom'>
                 <Card.Title>{title}</Card.Title>
-                <Card.Text className='text-dark text-opacity-50 fw-semibold' style={{height: '78px'}}>
+                <Card.Text className='fw-semibold text-style ' style={{height: '78px'}}>
                    {desc}
                 </Card.Text>
-                <div className="text-dark text-opacity-50 fw-semibold d-flex justify-content-between">
-                        <span><i className="fa-solid fa-location-dot me-2"></i>{city}, Chile.</span>  
+                <div className="text-style fw-semibold d-flex justify-content-between">
+                        <span><i className="fa-solid fa-location-dot me-2 text-style"></i>{city}, USA.</span>  
                     
                 {
-                    (token)
+                    (token && name === user)
                         ? <div className='d-flex justify-content-end'>
-                            <p className="text-dark text-opacity-50 me-3 fw-semibold">Valor desde:</p>
+                            <p className="text-dark text-opacity-50 me-3 fw-semibold">Per person:</p>
                             <p className="text-success me-2 fw-bold fs-5">${price}</p>
                         </div> 
-                        : <p className="text-dark text-opacity-50 me-3 fw-semibold">Guía: <span className='text-success'>{user}</span></p>
+                        : <p className="text-dark text-opacity-50 me-3 fw-semibold">User: <span className='text-success'>{user}</span></p>
                         
                 }
                 </div>
@@ -73,7 +75,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                 onClick ={onClickHandle}
                 >Ver más</Button>
                 {
-                    (token)
+                    (token && name === user)
                         ? 
                         <div className='d-flex justify-content-end'>
                             <Button variant="primary" 
@@ -83,7 +85,7 @@ noIncluye3, noIncluye4, noIncluye5, noIncluye6, necesario1, necesario2, necesari
                             >Eliminar</Button>
                         </div> 
                         :<div className='d-flex justify-content-end'>
-                            <p className="text-dark text-opacity-50 me-2 fw-semibold">Valor desde:</p>
+                            <p className="text-dark text-opacity-50 me-2 fw-semibold">Per person:</p>
                             <p className="text-success me-2 fs-5">${price}</p>
                         </div> 
                 }
