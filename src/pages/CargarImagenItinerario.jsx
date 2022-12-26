@@ -33,7 +33,7 @@ export const CargarImagenItinerario = () => {
             ? await cargarImagenItinerario(archivo, id)
             : document.getElementById('errorMsg').innerHTML = `
             <p>
-                No haz cargado ninguna imagen.
+            You have not uploaded any images.
             </p>`                            
     }
 
@@ -44,18 +44,18 @@ export const CargarImagenItinerario = () => {
         <header>
             {<NavModel name={name} pagina={page} />}
         </header>
-            <h3 className='text-center mb-5'>2- Carga una imagen para la descripcion de tu tour</h3>
+            <h3 className='text-center mb-5'>2- Upload an image for the description of your service</h3>
         <div className='form-wrapper pb-3'>
         <form 
             className='login-form'
             >
             <div className="mb-3">
             <div className="mb-3">
-                <label htmlFor="formFile" className="form-label">Sube una imagen para el itinerario de tu servicio</label>
+                <label htmlFor="formFile" className="form-label">Upload an image for the itinerary of your service</label>
                 <input className="form-control" type="file" id="formFile" onChange={onInputChange} />
             </div>
             </div>
-            <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Cargar Foto</button>
+            <button type="submit" className="btn btn-primary button-width" onClick={onSubmit}>Upload Photo</button>
             </form>
         </div>
         <div id='errorMsg' className='text-center mt-3' ></div> 

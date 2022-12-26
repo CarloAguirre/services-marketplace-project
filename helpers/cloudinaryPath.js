@@ -1,0 +1,1 @@
+export const cloudinaryPath = 'dubwhwd1w';

@@ -23,7 +23,7 @@ export const Error404 = () => {
           <h1 style={{paddingTop: '40vh', paddingBottom: '60vh'}}>--- ERROR 404 - PAGE NOT FOUND ---</h1>
         </div>
       <hr className=' container' />
-      <p className='text-center'>© Cabra del valle 2022-2023 - Todos los derechos reservados</p>
+      <p className='text-center'>© Cabra del valle 2022-2023 - All rights reserved</p>
       <hr className='mb-0'/>
       </div>     
     </div>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import {Cloudinary} from "@cloudinary/url-gen";
 import { serverPath } from "./serverPath";
+import { cloudinaryPath } from "./cloudinaryPath";
 
 
 
@@ -81,7 +82,7 @@ export const productInfoFetch = async(categoria)=>{
 
     const cld = new Cloudinary({
       cloud: {
-        cloudName: 'dubwhwd1w'
+        cloudName: cloudinaryPath
       }
     }); 
 
