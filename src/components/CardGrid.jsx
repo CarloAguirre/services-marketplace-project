@@ -23,7 +23,10 @@ export const CardGrid = () => {
     
     await productInfoFetch(categoria)
     .then(response =>{
-      
+      let i=0;
+      for(i=0; i<response.length; i++){
+        response[i].reverse()
+      }
       setImageIdArray(response);
     })
   };
@@ -34,7 +37,6 @@ export const CardGrid = () => {
     await productInfoFetch(value)
     .then(response =>{ 
 
-      console.log(response)
       if(response[0].length === 0){
         alert('There are no products with this category yet');
       }else{

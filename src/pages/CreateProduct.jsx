@@ -166,7 +166,7 @@ export const CreateProduct = () => {
                 value={ciudad}
                 onChange={onInputchange}
                 >
-                    <option>Nueva York</option>
+                    <option>City</option>
                     <option>Los Ángeles</option>
                     <option>Chicago</option>
                     <option>Houston</option>
@@ -194,7 +194,7 @@ export const CreateProduct = () => {
                     <option>Oklahoma City</option>
                     <option>Detroit</option>
                 </select>
-                <label htmlFor="floatingSelect">City</label>
+                <label htmlFor="floatingSelect">Select City</label>
             </div>
             <hr />
             
