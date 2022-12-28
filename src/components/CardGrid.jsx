@@ -39,6 +39,7 @@ export const CardGrid = () => {
 
       if(response[0].length === 0){
         alert('There are no products with this category yet');
+        return;
       }else{
         setImageIdArray(response);
       }
